@@ -116,6 +116,7 @@
               window.analytics.track("content_share_clicked", {
                 medium: link.trackingName,
               })}
+            target="_blank"
           >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
