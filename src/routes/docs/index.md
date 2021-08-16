@@ -9,7 +9,7 @@ title: Introduction
 
 # Introduction to Gitpod
 
-[Gitpod](https://www.gitpod.io) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code development environments** in the cloud accessible through your browser and [your local IDE](/blog/local-app).
+[Gitpod](/) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code development environments** in the cloud accessible through your browser and [your local IDE](/blog/local-app).
 
 Gitpod enables development teams to describe their dev environment as code and **start configurable and fresh development environments for each new task** entirely in the cloud. Think CI/CD for dev environments.
 
@@ -35,7 +35,7 @@ Leveraging the power of the cloud Gitpod provisions **blazingly fast, ephemeral 
 
 Gitpod **launches workspaces in seconds** and removes long init and build times by continuously pre-building workspaces for your project. This enables you and everybody collaborating on your project to **start coding or debugging immediately**, from any git context, at any time, from any device. No more waiting for NPM or Maven to download the Internet.
 
-Spinning up dev environments is easily repeatable and reproducible, because Gitpod creates a single configuration file in your repository allowing you to **automate, version-control and share consistent dev environments across your team**. We call this [dev-environments-as-code](https://www.gitpod.io/blog/dev-env-as-code).
+Spinning up dev environments is easily repeatable and reproducible, because Gitpod creates a single configuration file in your repository allowing you to **automate, version-control and share consistent dev environments across your team**. We call this [dev-environments-as-code](/blog/dev-env-as-code).
 
 ### ⚙️ Ephemeral
 
@@ -45,7 +45,7 @@ Then, when someone from your team does create a new workspace on a branch or Pul
 
 As a result you can treat your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you’ll use a fresh one.
 
-More on [prebuilds](https://www.gitpod.io/docs/prebuilds).
+More on [prebuilds](/docs/prebuilds).
 
 ### 🔒 Secure
 

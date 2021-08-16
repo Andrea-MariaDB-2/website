@@ -168,6 +168,15 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Christin is our Marketing Manager at Gitpod. She is eager to create a great brand experience and favors going the unconventional way. In her free time, she loves to be out in the nature, climbing rocks and practising yoga.",
   },
+  pawlean: {
+    name: "Pauline Narvas",
+    socialProfiles: {
+      github: "pawlean",
+      twitter: "paulienuh",
+      linkedin: "pnarvas",
+    },
+    description: "",
+  },
   "rl-gitpod": {
     name: "Robert Leftwich",
     socialProfiles: {
@@ -183,8 +192,10 @@ export const authors: { [idx: string]: Author } = {
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
   authors
 ).reduce((displayNames, [username, profile]) => {
-  displayNames[
-    username
-  ] = profile.socialProfiles.twitter ? `https://twitter.com/${profile.socialProfiles.twitter}` : profile.socialProfiles.linkedin ? `https://www.linkedin.com/in/${profile.socialProfiles.linkedin}` : `https://github.com/${profile.socialProfiles.github}`;
+  displayNames[username] = profile.socialProfiles.twitter
+    ? `https://twitter.com/${profile.socialProfiles.twitter}`
+    : profile.socialProfiles.linkedin
+    ? `https://www.linkedin.com/in/${profile.socialProfiles.linkedin}`
+    : `https://github.com/${profile.socialProfiles.github}`;
   return displayNames;
 }, {});

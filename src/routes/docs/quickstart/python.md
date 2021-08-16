@@ -52,6 +52,8 @@ The extension simply adds a Gitpod button on every project and branch across Git
 
 ![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
 
+If you prefer to not install browser extensions then you can use the Gitpod [browser bookmarklet](/docs/browser-bookmarklet) instead.
+
 For our partner GitLab we have a native integration into their UI that you can enable here.
 
 2. **Add your favorite VS Code themes and extensions**
@@ -72,5 +74,5 @@ Try it out and open 3 workspaces on the same context (e.g. on main or on an issu
 
 You've successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
 
-- [Getting started with your own project](https://www.gitpod.io/docs/configure)
+- [Getting started with your own project](/docs/configure)
 - [Git Integrations](/docs/integrations)

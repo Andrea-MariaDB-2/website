@@ -18,7 +18,7 @@ This simplification (or even magic) eventually turns out to be a hard wall. Once
 
 In this blog post, I will show you a transparent way of getting started with Node.js easily without the magic. The approach taken provides a low entry barrier without the wall once you grow out of it. You will learn how to write Node.js applications in a browser-based environment, that has all the depth of a full local dev environment with VS Code but the friendly onboarding of JSFiddle. These environments can be freely shared to work together and showcase your applications.
 
-The dev environment is called [Gitpod](https://www.gitpod.io/) and is entirely free for open-source development.
+The dev environment is called [Gitpod](/) and is entirely free for open-source development.
 
 <h2>Table of Contents</h2>
 
@@ -140,7 +140,7 @@ And change the Dockerfile to use Node.js 10.x as the base image:
 
 To try it our we need to push the config back to GitHub and open a new workspace. Let’s do this through a pull request, so we learn about the GitHub integration on the way.
 
-_Here is [another snapshot link](https://gitpod.io/#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](https://www.gitpod.io/docs/configure)._
+_Here is [another snapshot link](https://gitpod.io/#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](/docs/configure)._
 
 ## Working with Pull Requests
 

@@ -27,6 +27,16 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/changelog"
+  to = "/changelog"
+  status = 301
+
+[[redirects]]
+  from = "/references/changelog"
+  to = "/changelog"
+  status = 301
+
+[[redirects]]
   from = "/docs/self-hosted/latest/self-hosted"
   to = "/docs/self-hosted/latest"
   status = 301

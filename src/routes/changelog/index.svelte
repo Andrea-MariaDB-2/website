@@ -11,6 +11,7 @@
   import NewsletterSignup from "../../components/blog/newsletter-signup.svelte";
   import "../../assets/markdown-commons.scss";
   import Modal from "../../components/modal.svelte";
+  import TwitterFollowButton from "../../components/twitter-follow-button.svelte";
 
   export let changelogEntries: Changelog[];
 
@@ -57,16 +58,7 @@
     <h1 class="mt-x-large mb-macro md:mt-xx-large">Changelog</h1>
     <p>Gitpod product improvements and updates</p>
     <p class="mt-micro">
-      <a
-        href="https://www.twitter.com/gitpod"
-        rel="noopener"
-        on:click={() =>
-          window.analytics.track("social_opened", {
-            context: "changelog",
-            platform: "twitter",
-          })}
-        class="btn-primary">Follow us on Twitter</a
-      >
+      <TwitterFollowButton trackingContext="changelog" class="btn-primary" />
       <button
         class="btn-secondary"
         on:click={() => (isNewsLetterFormShown = true)}

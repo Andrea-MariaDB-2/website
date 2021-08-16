@@ -1,13 +1,13 @@
 ---
 section: self-hosted/latest
-title: Install Gitpod Self-Hosted on Amazon EKS
+title: Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Install Gitpod Self-Hosted on Amazon EKS
+# Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)
 
 Installation instructions for Gitpod Self-Hosted on Amazon EKS are currently located in the [gitpod-io/gitpod-eks-guide](https://github.com/gitpod-io/gitpod-eks-guide) repository on GitHub. The installation process takes around forty minutes. In the end, the following resources are created:
 

@@ -6,7 +6,7 @@
   import OpenGraph from "../components/open-graph.svelte";
 </script>
 
-<style>
+<style type="text/postcss">
   .featureTable + p {
     margin: auto;
     max-width: 60%;
@@ -48,7 +48,7 @@
     margin-right: 1rem;
   }
   .max-w-30rem {
-    max-width: 30rem;
+    @apply lgx:max-w-lg;
   }
   .mt-1rem {
     margin-top: 1rem;
@@ -59,9 +59,6 @@
   .mb-7rem {
     margin-bottom: 7rem;
   }
-  .mr-1rem {
-    margin-right: 1rem;
-  }
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -70,8 +67,7 @@
     padding: 4rem;
   }
   .card-image-legend {
-    margin-top: 2rem;
-    margin-bottom: 0;
+    @apply mt-x-small mb-small;
     font-size: 12px;
     align-self: stretch;
   }
@@ -83,35 +79,20 @@
     margin-right: auto;
     border-radius: 2rem;
   }
-  .halfimages article > div {
-    min-width: 300px;
-  }
-  @media (max-width: 768px) {
-    .halfimages .card,
-    .cards {
-      max-width: 98vw;
+
+  @media(max-width: 1140px) {
+    .halfimages article {
+      @apply flex-col;
     }
-    .halfimages article > div:last-child,
-    .cards > div:last-child {
-      margin-top: 3rem;
-    }
+
+    .halfimages article > div,
     .cards.double > div {
-      min-width: 100%;
-    }
+      @apply flex-1 self-center;
+    }    
   }
-  .halfimages article > div,
-  .cards > * {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
+
   .flex-grow {
     flex-grow: 1;
-  }
-  .inline-block {
-    display: inline-block;
   }
   .text-center {
     text-align: center;
@@ -119,9 +100,6 @@
   .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .leading-3 {
-    line-height: 0.75rem;
   }
 </style>
 

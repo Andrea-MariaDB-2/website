@@ -51,7 +51,7 @@
         class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full h-64 {type ===
         'blog'
           ? ''
-          : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-60'}"
+          : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-full'}"
         style={`background-image: url(/images/${type}/${post.slug}/${post.image});`}
       />
     </a>

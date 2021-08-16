@@ -43,17 +43,17 @@ Sven will run a webinar next week on Thursday, where we will showcase how we use
 
 <h2 class="h1">Gitpod Self-Hosted is Now Free</h2>
 
-The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments.
+The [SaaS offering of gitpod.io](/pricing) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments.
 
 In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod Self-Hosted can purchase an enterprise license in order to get additional features like:
 
-- [Snapshots](https://www.gitpod.io/features/#snapshot) (share a reproducible workspace with your team)
-- [Live Share](https://www.gitpod.io/features/#share) (invite others into your running workspace)
-- [Unlimited Prebuilds](https://www.gitpod.io/features/#prebuilt) (making ephemeral dev environments possible)
+- [Snapshots](/features#snapshot) (share a reproducible workspace with your team)
+- [Live Share](/features#share) (invite others into your running workspace)
+- [Unlimited Prebuilds](/features#prebuilt) (making ephemeral dev environments possible)
 - Admin Dashboard
 
 Offering a paid plan for enterprises makes it possible for us to keep working towards building a new category in developer tooling, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid offering.
 
-<a class="btn-conversion" href="https://www.gitpod.io/self-hosted">
+<a class="btn-conversion" href="/self-hosted">
     Start for free
 </a>

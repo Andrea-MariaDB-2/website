@@ -9,8 +9,8 @@ export const hyphenate = (str: string = "") =>
 export const showHideOverflowY = (bool: boolean) => {
   const html = document.querySelector("html");
   if (bool) {
-    html.classList.add("overflow-y-hidden");
+    html.classList.add("overflow-y-hidden", "mr-4");
   } else {
-    html.classList.remove("overflow-y-hidden");
+    html.classList.remove("overflow-y-hidden", "mr-4");
   }
 };

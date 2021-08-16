@@ -26,6 +26,10 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [Datasette](/docs/quickstart/datasette)
 - [Nix](/docs/quickstart/nix)
 - [Haskell](/docs/quickstart/haskell)
+- [C](/docs/quickstart/c)
+- [Perl](/docs/quickstart/perl)
+- [Julia](/docs/quickstart/julia)
+- [Docker Compose](/docs/quickstart/docker-compose)
 
 ## Installing the Gitpod browser extension
 
@@ -34,6 +38,8 @@ You can install the Gitpod browser extension in any [Chromium-based](https://chr
 The Gitpod extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any project.
 
 ![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
+
+If you prefer to not install browser extensions then you can use the Gitpod [browser bookmarklet](/docs/browser-bookmarklet) instead.
 
 ## Next Steps
 

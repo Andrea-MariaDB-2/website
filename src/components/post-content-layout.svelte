@@ -6,7 +6,7 @@
 
   export let baseUrl: string;
   export let imagesDirectoryName: string;
-  export let norobots: boolean;
+  export let norobots: boolean = false;
 
   const {
     date,
@@ -116,6 +116,7 @@
               window.analytics.track("content_share_clicked", {
                 medium: link.trackingName,
               })}
+            target="_blank"
           >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>

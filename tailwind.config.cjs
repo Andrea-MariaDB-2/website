@@ -13,7 +13,8 @@ module.exports = {
           ([_match, group, ..._rest]) => group
         ),
       ],
-      safelist: ["overflow-y-hidden"],
+      // we have to safelist these because there are dynamically added to the dom via JS and for prod tailwind ships the classes via analyzing the markup without doing so these won't make there way to prod unless used somewhere on the markup.
+      safelist: ["overflow-y-hidden", "mr-4"],
     },
   },
   darkMode: false, // or 'media' or 'class'

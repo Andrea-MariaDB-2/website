@@ -9,5 +9,6 @@ title: Installing Gitpod Self-Hosted
 
 # Install Gitpod Self-Hosted
 
+- [Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)](./installation/on-amazon-eks)
+- [Install Gitpod Self-Hosted on Google Kubernetes Engine (GKE)](./installation/on-gke)
 - [Install Gitpod Self-Hosted on Kubernetes](./installation/on-kubernetes)
-- [Install Gitpod Self-Hosted on Amazon EKS](./installation/on-amazon-eks)

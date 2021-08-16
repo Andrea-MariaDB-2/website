@@ -27,11 +27,12 @@
     <h2 class="h1">FAQs</h2>
     <Faq title="Can I always use Gitpod for free?" {trackingContext}>
       <p>
-        Yes! Gitpod is always for free for public repositories for up to 50h per
-        month. If you need more hours or would like to unlock more features, you
-        can upgrade your subscription at any time. If you’re a professional
-        open-source developer and need more hours, you can apply to our free <a
-          href="/docs/professional-open-source">Professional Open Source plan</a
+        Yes! Gitpod is always for free for public and private repositories for
+        up to 50h per month. If you need more hours or would like to unlock more
+        features, you can upgrade your subscription at any time. If you’re a
+        professional open-source developer and need more hours, you can apply to
+        our free <a href="/docs/professional-open-source"
+          >Professional Open Source plan</a
         >.
       </p>
     </Faq>

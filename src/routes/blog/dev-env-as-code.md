@@ -90,7 +90,7 @@ By far the best option is an IDE that runs in browsers, like the new [Theia I](h
 
 For a simple Docker-based dev environment you could add Theia to your Docker image. It offers a full IDE including terminals to your workspace image.
 
-The next step would be to treat your development environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](https://www.gitpod.io) does exactly that.
+The next step would be to treat your development environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](/) does exactly that.
 
 It integrates with code hosting platforms such as GitHub. It eliminates all the tedious transitions by automating them. You see code on some website and want to give it a spin in a real dev environment? Gitpod does everything it can to get you there with a single click. It lets you provide custom Docker files or Docker images and runs Theia IDE.
 

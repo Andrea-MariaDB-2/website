@@ -27,7 +27,7 @@ For example, you could try opening this Spring PetClinic (Java) repository in Gi
 
 https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic
 
-For more convenience, you can also install Gitpod's browser extension (for [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) and [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/)), which will add a `Gitpod` button to all Bitbucket projects.
+For more convenience, you can also install Gitpod's browser extension (for [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) and [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/)), which will add a `Gitpod` button to all Bitbucket projects or alternatively use our [browser bookmarklet](/docs/browser-bookmarklet).
 
 Gitpod also supports other types of Bitbucket URLs, like:
 

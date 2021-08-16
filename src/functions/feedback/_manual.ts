@@ -19,6 +19,7 @@ const emotionSlackEmojiMap = {
 const feedbackTypetoSheetTitle = {
   docs: "Docs - Raw Feedback",
   guides: "Guides - Raw Feedback",
+  digests: "Digests - Raw Feedback",
 };
 
 export const submitFeedback = async (body: string): Promise<Response> => {
@@ -28,7 +29,7 @@ export const submitFeedback = async (body: string): Promise<Response> => {
     data: [new Date(), feedback.emotion, feedback.url, feedback.note],
   });
   const isSentToSlack = await sendFeedbackToSlack(`${
-    feedback.type === "docs" ? "Docs" : "Guides"
+    feedback.type.charAt(0).toUpperCase() + feedback.type.slice(1)
   } feedback: ${emotionSlackEmojiMap[feedback.emotion]}
 Link: ${feedback.url}
 Note: ${feedback.note ? feedback.note : "N/A"}`);

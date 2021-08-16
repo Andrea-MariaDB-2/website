@@ -107,11 +107,16 @@
 >
   <div class="letter lg:w-2/5 lgpr-xx-small mb-small">
     <p class="text-large">
-      Hi there, Sad to see you leave 😕 To improve and make sure that other
-      developers are happier with Gitpod, we’d love to get your opinion on why
-      you decided to uninstall your browser extension. We will work hard to
-      build a product that (hopefully) convinces you to use Gitpod again at a
-      later point ✌️
+      Hi there, sad to hear that our browser extension was uninstalled. To
+      improve and make sure that other developers are happier with Gitpod, we’d
+      love to get your opinion on why you decided to uninstall your browser
+      extension. ✌️
+    </p>
+    <br />
+    <p class="text-large">
+      ps. Did you know we also offer a <a href="/docs/browser-bookmarklet"
+        >browser bookmarketlet</a
+      > as an alternative?
     </p>
   </div>
   <form

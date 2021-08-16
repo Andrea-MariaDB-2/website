@@ -5,7 +5,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Public Repos", "Private Repos 30d Trial"],
+    features: ["50 hours/month", "Private & Public Repos"],
     btnText: "Try Now",
     btnHref: "/#get-started",
     trackingName: "free",
@@ -14,12 +14,7 @@ export const pricingPlans: Pricing[] = [
     title: "Personal",
     price: isEurope() ? "€8" : "$9",
     duration: "Per User/Month",
-    features: [
-      "100 hours/month",
-      "Private & Public Repos",
-      "4 Parallel Workspaces",
-      "30min Timeout",
-    ],
+    features: ["100 hours/month", "4 Parallel Workspaces", "30min Timeout"],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans",
     trackingName: "personal",
@@ -79,7 +74,7 @@ export const otherPlans = [
   {
     title: "Student",
     paragraphs: [
-      `For those still learning the ropes, you can get our student plan for <strong>${
+      `For those still learning the ropes, you can get our Unleashed Plan for <strong>${
         isEurope() ? "€8" : "$9"
       } per month.</strong>`,
       `

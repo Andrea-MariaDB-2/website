@@ -30,7 +30,7 @@
     }
 
     &__text {
-      max-width: 600px;
+      max-width: 700px;
       flex: 0 0 50%;
 
       @media (max-width: 972px) {

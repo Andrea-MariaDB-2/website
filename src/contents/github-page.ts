@@ -5,7 +5,7 @@ export const ghStudentPricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Public Repos", "Private repos 30d trial"],
+    features: ["50 hours/month", "Private & Public Repos"],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },
@@ -47,7 +47,7 @@ export const ghTeacherPricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Public Repos", "Private repos 30d trial"],
+    features: ["50 hours/month", "Private & Public Repos"],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },

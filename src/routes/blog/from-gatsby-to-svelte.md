@@ -11,7 +11,7 @@ title: From Gatsby to Svelte in 3 weeks
 
 **tl;dr:**
 
-- [Gitpod](https://www.gitpod.io) recently announced new funding and a completely new brand ([read more](https://www.gitpod.io/blog/next-chapter-for-gitpod)) 🍊.
+- [Gitpod](/) recently announced new funding and a completely new brand ([read more](/blog/next-chapter-for-gitpod)) 🍊.
 - As part of that, we rebuilt the website from scratch, replacing React & Gatsby with [Svelte](https://svelte.dev) & [SvelteKit](https://kit.svelte.dev).
 - Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod development environment by visiting <a class="no-nowrap" href="https://gitpod.io#https://github.com/gitpod-io/website" rel="nofollow">https://gitpod.io#https://github.com/gitpod-io/website</a>.
 - Listen to the Svelte Radio episode "[Migrating from Sapper to SvelteKit](https://share.transistor.fm/s/507ad528)" where I shared more details.
@@ -28,7 +28,7 @@ Overall, Gatsby & React is a great choice and gets the job done just fine. Many 
 
 **However**, at Gitpod we care deeply about developer experience & productivity - this is what our product is all about afterall. This is where we believe [Svelte](https://svelte.dev) and [SvelteKit](https://kit.svelte.dev) lead the pack in today’s web application development. By leveraging [Vite](https://vitejs.dev), developing a SvelteKit web app is as instant as it gets, it even persists local state when hot reloading the web application!
 
-In addition, we had an extremely tight timeframe from the start of the project to the [announcement of our funding and the new brand](https://www.gitpod.io/blog/next-chapter-for-gitpod). While I have had two years of experience with Svelte & Sapper, the other three developers had not worked together previously and were not familiar with Svelte. Nevertheless, I was confident the rest of the team would pick up Svelte and be productive right away. To learn Svelte, all you really need is work your way through the [tutorial](https://svelte.dev/tutorial).
+In addition, we had an extremely tight timeframe from the start of the project to the [announcement of our funding and the new brand](/blog/next-chapter-for-gitpod). While I have had two years of experience with Svelte & Sapper, the other three developers had not worked together previously and were not familiar with Svelte. Nevertheless, I was confident the rest of the team would pick up Svelte and be productive right away. To learn Svelte, all you really need is work your way through the [tutorial](https://svelte.dev/tutorial).
 
 **To me, building a SvelteKit app from scratch felt less risky than modifying an existing Gatsby codebase!**
 

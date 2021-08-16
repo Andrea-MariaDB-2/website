@@ -8,7 +8,7 @@
   let isSubmittedOnce = false;
   let clazz = "";
   export { clazz as class };
-  export let type: "docs" | "guides";
+  export let type: "docs" | "guides" | "digests";
 
   const submitFeedback = async () => {
     isSubmittedOnce = true;

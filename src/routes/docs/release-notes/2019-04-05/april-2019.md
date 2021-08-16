@@ -7,7 +7,7 @@
 Today we are happy to announce that we are moving out of beta.
 We want to thank all the beta testers who have provided great feedback. Gitpod wouldn't be what it is without you! ❤️
 
-You can read more about the announcement in [the blog post](https://www.gitpod.io/blog/gitpod-launch/).
+You can read more about the announcement in [the blog post](/blog/gitpod-launch).
 
 Besides a complete relaunch of the website and app, we have added some very exciting new features:
 
@@ -20,7 +20,7 @@ On GitHub pull requests this is communicated through a status check.
 
 As a result, Gitpod is now the first IDE that builds your project, before you open it.
 
-Read more about this exciting feature in [the docs](https://www.gitpod.io/docs/prebuilds) and in [Chris' blog post](https://www.gitpod.io/blog/prebuilds).
+Read more about this exciting feature in [the docs](/docs/prebuilds) and in [Chris' blog post](/blog/prebuilds).
 
 ## Better `localhost` Handling
 
@@ -38,11 +38,11 @@ Gitpod now directly uses Microsoft's great Go support for VS Code.
 
 If you don't feel comfortable with a time-based limit, you can now purchase the 'Unlimited' plan to use Gitpod as much as you like on public and private repositories.
 
-We also offer [unlimited plans for teams](https://gitpod.io/teams/), and [for students](https://www.gitpod.io/pricing) the price for an unlimited plan is only 9$ or 8€.
+We also offer [unlimited plans for teams](https://gitpod.io/teams/), and [for students](/pricing) the price for an unlimited plan is only 9$ or 8€.
 
 > If you have created your account during the beta, i.e. before April 5th, you will be able to work on private repositories for free for another month, on us.
 
-You can check out the various [pricing options on the website](https://www.gitpod.io/pricing).
+You can check out the various [pricing options on the website](/pricing).
 
 ## New Design 💄
 

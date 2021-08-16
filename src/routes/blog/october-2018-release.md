@@ -18,7 +18,7 @@ It has been a month already since we went public with Gitpod.io. We want to take
 We are working to incorporate all your feedback continuously, adding new features, fixing bugs and improving the overall usability and performance.
 Please keep sending all that useful feedback!
 
-Today, we are pleased to announce a new version of [Gitpod](https://www.gitpod.io).
+Today, we are pleased to announce a new version of [Gitpod](/).
 
 ![A Cake with Sparkles by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*TrpIB26qJjpdoAmh)_Photo by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 

@@ -3,7 +3,7 @@ import { submitFeedback as submitExtensionFeedback } from "./_browser-extension"
 import { submitFeedback as submitManualFeedback } from "./_manual";
 
 const routeToHandler = (type: string) => {
-  if (type === "docs" || type === "guides") {
+  if (type === "docs" || type === "guides" || type === "digests") {
     return submitManualFeedback;
   } else if (type === "browser-extension") {
     return submitExtensionFeedback;

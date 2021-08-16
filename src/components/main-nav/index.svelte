@@ -14,8 +14,9 @@
       label: "Features",
     },
     {
-      href: "/pricing",
-      label: "Pricing",
+      href: "/screencasts",
+      label: "Screencasts",
+      isHighlighted: true,
     },
     {
       href: "/blog",
@@ -28,11 +29,10 @@
     {
       href: "/changelog",
       label: "Changelog",
-      isHighlighted: true,
     },
     {
-      href: "/careers",
-      label: "We're hiring",
+      href: "/pricing",
+      label: "Pricing",
     },
   ];
 </script>

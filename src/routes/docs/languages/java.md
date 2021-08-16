@@ -167,7 +167,7 @@ Here are a few Vaadin example projects that are already automated with Gitpod:
 
 Start by downloading a [**Vaadin and Spring Boot** project starter](https://vaadin.com/start) if you don't have a Vaadin project from before.
 
-Next, add a [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file) file with the follwing content to the root of the project:
+Next, add a [`.gitpod.yml`](/docs/config-gitpod-file) file with the follwing content to the root of the project:
 
 ```YAML
 tasks:
@@ -183,9 +183,9 @@ You are now ready to push your code to GitHub.
 
 ### Enable prebuilds for a faster startup
 
-The first time you start a Vaadin application, it downloads both Maven and npm dependencies, which can take some time. You can speed up the GitPod startup by enabling [prebuild](https://www.gitpod.io/docs/prebuilds) for the repository.
+The first time you start a Vaadin application, it downloads both Maven and npm dependencies, which can take some time. You can speed up the GitPod startup by enabling [prebuild](/docs/prebuilds) for the repository.
 
-Update your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file) file with the following content:
+Update your [`.gitpod.yml`](/docs/config-gitpod-file) file with the following content:
 
 ```YAML
 tasks:
@@ -199,6 +199,6 @@ github:
     master: true
 ```
 
-Finally, enable prebuilds on GitHub [as instructed in the prebuild documentation](https://www.gitpod.io/docs/prebuilds#enable-prebuilt-workspaces).
+Finally, enable prebuilds on GitHub [as instructed in the prebuild documentation](/docs/prebuilds#enable-prebuilt-workspaces).
 
 Next time you push code to your repository, the `prebuild` command will download all the dependencies and make the project startup faster.
