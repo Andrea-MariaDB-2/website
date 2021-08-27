@@ -76,6 +76,7 @@
       name: trackingName,
       repo_url: githubUrl,
     })}
+  rel="noopener"
   class="project group"
 >
   <div class="project__left">

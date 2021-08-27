@@ -49,7 +49,7 @@
 
   :global(.price-small),
   :global(.crossed-out) {
-    @apply text-gray-700 text-h4 mr-macro;
+    @apply text-gray-800 text-h4 mr-macro;
   }
 </style>
 
@@ -64,7 +64,7 @@
       {@html price}
     </div>
     <div
-      class="px-large lgx:px-medium mb-xx-small text-light-grey font-semibold"
+      class="px-large lgx:px-medium mb-xx-small text-dark-grey font-semibold"
     >
       {#if duration}
         {duration}
@@ -100,6 +100,6 @@
     >
   {/if}
   {#if footnote}
-    <div class="text-p-xsmall px-small text-gray-700">{footnote}</div>
+    <div class="text-p-xsmall px-small text-gray-800">{footnote}</div>
   {/if}
 </div>

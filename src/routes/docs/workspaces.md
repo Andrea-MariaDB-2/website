@@ -21,6 +21,8 @@ For each of these tasks, you start a clean, ephemeral Gitpod workspace. You can 
 
 You can learn more about the [Life of a workspace](/docs/life-of-workspace).
 
+`youtube: n7Ca3jHFtZg`
+
 ## Gitpod vs. local development
 
 A Gitpod workspace is similar to your local development environment, except for two key differentiators:

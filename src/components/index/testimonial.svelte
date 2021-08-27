@@ -41,6 +41,7 @@
       position: position,
     })}
   class="my-2 text-small"
+  rel="noreferrer"
 >
   <div
     class="testimonial w-96 p-6 overflow-hidden rounded-2xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"

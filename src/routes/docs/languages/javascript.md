@@ -39,7 +39,7 @@ tasks:
 
 <span aria-hidden="true">👆</span> In the above example, we are telling Gitpod to run what is in the `init` phase at the time of workspace initialization and then afterwards run whatever is in the `command` phase.
 
-You can read more about start tasks [here](/docs/config-start-tasks).
+Read more about [start tasks](/docs/config-start-tasks).
 
 ## Node Versions
 

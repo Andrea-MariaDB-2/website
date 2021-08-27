@@ -6,10 +6,16 @@
    This is to overwrite default values to match the design specs.
  */
 .content-docs .avatars a {
-  color: var(--light-grey);
+  color: var(--dark-grey);
   font-weight: 400;
 }
 
 .content-docs .avatars a:hover {
-  color: var(--dark-grey);
+  color: var(--black);
+}
+
+.avatars .linkless {
+  &:not(:first-child) {
+    @apply -ml-2;
+  }
 }

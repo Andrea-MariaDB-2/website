@@ -14,6 +14,8 @@ There are two ways to share your workspaces:
 - [Sharing Snapshots](#sharing-snapshots)
 - [Sharing Running Workspaces](#sharing-running-workspaces)
 
+`youtube: TrY15zN98p8`
+
 ## Sharing Snapshots
 
 You can take snapshot URLs of your workspaces at any time and share them with others. Anyone clicking on such a snapshot link will get a complete clone of your workspace, including the

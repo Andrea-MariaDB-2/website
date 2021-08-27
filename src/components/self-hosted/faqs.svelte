@@ -22,8 +22,10 @@
         like unlimited prebuilds, shared workspaces, snapshots and an admin
         dashboard, you can upgrade to the Professional Plan at any time. Simply
         update your existing instance with a purchased license key. Self-hosted
-        Gitpod licenses can currently only be purchased by request. Please
-        request a license key <a href="/enterprise-license">here</a> or
+        Gitpod licenses can currently only be purchased by request. Please <a
+          href="/enterprise-license">request a license key</a
+        >
+        or
         <a href="/contact">Get in touch</a> if you have any questions.
       </p>
     </Faq>
@@ -63,8 +65,7 @@
     <Faq title="How can I pay?" {trackingContext}>
       <p>
         Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on
-        request. Please request a license key
-        <a href="/enterprise-license">here</a>
+        request. Please <a href="/enterprise-license">request a license key</a>
         and we'll contact you. If you have any questions, please
         <a href="/contact">Get in touch</a>. All our plans can be paid via
         invoice.

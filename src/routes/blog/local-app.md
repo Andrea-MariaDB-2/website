@@ -37,7 +37,7 @@ VS Code will detect the service on port 5000 and offer 3 options. Click on the '
 
 We love feedback here at Gitpod, so please give it a try and let us know what you think!
 
-<div style="position: relative; padding-bottom: 77.92207792207792%; height: 0;"><iframe src="https://www.loom.com/embed/5f229a408b6744dcbc6d592a9d82ff28" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 77.92207792207792%; height: 0;"><iframe title="Gitpod Local Companion - localhost is going remote - Svelte demo" src="https://www.loom.com/embed/5f229a408b6744dcbc6d592a9d82ff28" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## Installation
 

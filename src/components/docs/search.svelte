@@ -15,6 +15,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import topicsState from "./states/topics-state";
+  import { page } from "$app/stores";
+  let clazz = "";
+  export { clazz as class };
+  export let containerClasses = "";
+  export let iconClasses = "";
+  export let placeholder = "Quick search";
 
   const docSearchJSVersion = "2.6.3";
   const docSearchInputSelector = "search-doc-input";
@@ -22,7 +28,7 @@
   let docSearchInput: HTMLInputElement;
   let docSearchScript: HTMLScriptElement;
   let docSearchScriptLoaded = false;
-  let placeholder = "Quick search";
+  let isSupportPage = $page.path.includes("support");
 
   $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
     window.docsearch &&
@@ -57,8 +63,6 @@
 
 <style lang="scss">
   .input-container {
-    box-shadow: var(--shadow);
-
     @media (max-width: 768px) {
       @apply mb-4;
 
@@ -66,21 +70,6 @@
         display: none;
       }
     }
-  }
-
-  .input-icon {
-    position: absolute;
-    top: 50%;
-    left: 0.625rem;
-    width: var(--xx-small);
-    height: var(--xx-small);
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-
-  input {
-    height: var(--small);
-    font-size: var(--p-medium);
   }
 
   :global(.algolia-autocomplete) {
@@ -113,13 +102,13 @@
 <svelte:body on:keydown={handleBodyKeyDown} />
 
 <div
-  class={`input-container relative bg-white rounded-xl w-full mb-12 ${
-    $topicsState ? "topics-active" : ""
-  }`}
+  class={`input-container relative bg-white rounded-xl w-full shadow-normal mb-12 ${
+    $topicsState || isSupportPage ? "topics-active" : ""
+  } ${containerClasses}`}
 >
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <img
-    class="input-icon"
+    class="absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none h-xx-small w-xx-small lef {iconClasses}"
     src="/svg/mag-glass.svg"
     alt="Search"
     aria-hidden="true"
@@ -129,6 +118,6 @@
     type="search"
     {placeholder}
     id={docSearchInputSelector}
-    class="box-border block w-full pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900"
+    class="box-border block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900 {clazz}"
   />
 </div>

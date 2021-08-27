@@ -11,7 +11,7 @@
 
 <style lang="scss">
   time {
-    color: var(--light-grey);
+    color: var(--dark-grey);
   }
   article {
     max-width: 400px;

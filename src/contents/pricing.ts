@@ -67,7 +67,7 @@ export const otherPlans = [
       "Gitpod self-hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
       "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong> and <strong>K3s</strong>.",
     ],
-    btnText: "Learn more",
+    btnText: "More about Self-Hosted",
     btnHref: "/self-hosted",
     trackingName: "self-hosted",
   },

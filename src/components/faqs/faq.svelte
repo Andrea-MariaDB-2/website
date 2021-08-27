@@ -1,13 +1,13 @@
 <script>
   import { faqsKey } from "./faqs.svelte";
   import { getContext, onMount } from "svelte";
-  import { hyphenate } from "../../utils/helper";
+  import { stringToBeautifiedFragment } from "../../utils/helper";
 
   export let title;
   export let trackingContext;
 
   const activeFaq = getContext(faqsKey);
-  const fragment = hyphenate(title);
+  const fragment = stringToBeautifiedFragment(title);
 
   const setActive = ({ target }) => {
     const open = target.open;

@@ -45,12 +45,12 @@
   <div class="modal flex justify-center items-center" on:click={closeModal}>
     <div class="flex justify-center items-center relative">
       <button
-        class="absolute right-6 top-6 h-3 w-3 z-10"
+        class="absolute right-6 top-6 z-10 h-10 w-10 md:h-5 md:w-5 flex items-center justify-center"
         bind:this={closeEl}
         aria-label="close this popup"
         on:click={closeModal}
       >
-        <img alt="Close" role="presentation" src="/x.svg" />
+        <img alt="Close" role="presentation" src="/x.svg" class="h-3 w-3" />
       </button>
       <slot />
     </div>

@@ -31,6 +31,7 @@
     on:click={() =>
       window.analytics.track("gitpod_editor_clicked", { context: "docs" })}
     class="btn-otherbrand"
+    rel="noopener"
   >
     <span class="logo">
       <LogoTextless />

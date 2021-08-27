@@ -1,6 +1,7 @@
 <script lang="ts">
   export let id: string = "";
-  export let className: string = "";
+  let clazz = "";
+  export { clazz as class };
 </script>
 
 <style lang="scss">
@@ -21,6 +22,6 @@
   }
 </style>
 
-<section {id} class={className}>
+<section {id} class={clazz}>
   <slot />
 </section>

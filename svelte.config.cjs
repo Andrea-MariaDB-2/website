@@ -8,6 +8,9 @@ const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
 const remarkEmbedVideo = require("./src/utils/remark-embed-video.cjs");
 const remarkLinkWithImageAsOnlyChild = require("./src/utils/remark-link-with-image-as-only-child.cjs");
+const remarkHeadingsPermaLinks = require("./src/utils/remark-headings-permalinks.cjs");
+const toString = require("mdast-util-to-string");
+const h = require("hastscript");
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -59,10 +62,18 @@ module.exports = {
           {
             behavior: "append",
             linkProperties: {},
+            content: function (node) {
+              return [
+                h("span.icon.icon-link", {
+                  ariaLabel: toString(node) + " permalink",
+                }),
+              ];
+            },
           },
         ],
         remarkSetImagePath,
         remarkLinkWithImageAsOnlyChild,
+        remarkHeadingsPermaLinks,
         [
           remarkEmbedVideo,
           {

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { DisplayNames, SocialMediaLinks } from "../types/avatars.type";
+import Avatar from "./avatar.svelte";
 
   /**
    * One or more comma-separated GitHub username.
@@ -61,25 +62,19 @@
 
 <span class="avatars">
   {#each trimmedUsernames as username}
-    <a
-      href={getSocialMediaLink(username)}
-      target="_blank"
-      class:showAvatar
-      class="no-underline transition-none {socialMediaLinkClasses}"
-    >
-      {#if showAvatar}
-        <!-- We use the GitHub profile image because the Twitter profile image needs an authenticated API call -->
-        <img
-          src="https://github.com/{username}.png"
-          alt="Avatar of {username}"
-          height="24"
-          width="24"
-          class="inline rounded-full border border-solid border-off-white {socialMediaImgClasses}"
-        />
-      {/if}
-      {#if displayNames}
+    {#if displayNames}
+      <a
+        href={getSocialMediaLink(username)}
+        target="_blank"
+        class:showAvatar
+        class="no-underline transition-none {socialMediaLinkClasses}"
+        rel="noreferrer"
+      >
+      <Avatar {username} {socialMediaImgClasses} />
         {displayNames[username]}
-      {/if}
-    </a>
+      </a>
+    {:else}
+      <Avatar {username} {socialMediaImgClasses} />
+    {/if}
   {/each}
 </span>

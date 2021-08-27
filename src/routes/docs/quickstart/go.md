@@ -9,7 +9,7 @@ title: Go template
 
 # Go Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/template-golang-cli) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Golang](https://github.com/gitpod-io/template-golang-cli) template.
 
 The following guide will:
 
@@ -19,18 +19,18 @@ The following guide will:
 
 For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
-### Step 1: Clone Git repository
+## Step 1: Clone Git repository
 
 - Create a new repository based on the [Go template](https://github.com/gitpod-io/template-golang-cli/generate).
 - Name it e.g. `my-go-template`.
 
-### Step 2: Install Gitpod app
+## Step 2: Install Gitpod app
 
 - Install the [Gitpod App](https://github.com/apps/gitpod-io/installations/new).
 
   Gitpod's GitHub app is similar to a CI server and will continuously prepare prebuilds for all your branches and pull requests - so you don't have to wait for Maven or NPM downloading the internet when you want to start coding.
 
-### Step 3: First prebuild
+## Step 3: First prebuild
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
@@ -38,7 +38,7 @@ The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_user
 
 Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
-### Step 4: Enjoy being ready-to-code 🤙
+## Step 4: Enjoy being ready-to-code 🤙
 
 Once the first prebuild ran, Gitpod starts an automated and fully configured development environment in a workspace that is now ready for you to develop.
 

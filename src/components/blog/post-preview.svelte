@@ -47,6 +47,7 @@
   {#if isMostRecent}
     <a href="/{type}/{post.slug}" sveltekit:prefetch>
       <div
+        role="img"
         aria-label={`${type === "blog" ? "Blog post" : "Guide"}: ${post.title}`}
         class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full h-64 {type ===
         'blog'

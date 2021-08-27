@@ -15,7 +15,7 @@ subtitle:
 
 **TL;DR**
 
-- [Welcome to the party, GitHub Codespaces!](https://www.gitpod.io/blog/github-codespaces)
+- [Welcome to the party, GitHub Codespaces!](/blog/github-codespaces)
 - Gitpod is now free for public **and private** repositories!
 
 At Gitpod, [we believe](https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6) that
@@ -63,4 +63,4 @@ Starting today our free tier is **open to every developer** with a GitLab, GitHu
 
 Go ahead and experience the peace of mind and productivity boost on your own.
 
-Learn how to [use Gitpod](https://www.gitpod.io/docs/quickstart) in less than 5 minutes!
+Learn how to [use Gitpod](/docs/quickstart) in less than 5 minutes!

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { stringToBeautifiedFragment } from "../../utils/helper";
   import type { Screencast } from "../../types/screencasts.type";
   import Logo from "../svgs/logo.svelte";
 
@@ -13,7 +14,9 @@
 </style>
 
 <a
-  href="/screencasts/{screencast.title.toLowerCase().replace(/\s/g, '-')}"
+  href="/screencasts/{stringToBeautifiedFragment(
+    screencast.title.slice(0, -3)
+  )}"
   class="cast min-w-full"
 >
   <div>

@@ -22,7 +22,7 @@
       background-color: var(--dark-grey);
     }
     .light-grey {
-      background-color: var(--light-grey);
+      background-color: var(--dark-grey);
     }
     .brand-almost-ripe {
       background-color: var(--brand-almost-ripe);

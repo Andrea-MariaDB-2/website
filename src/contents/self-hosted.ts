@@ -12,7 +12,7 @@ export const pricingPlans: Pricing[] = [
   },
   {
     title: "Professional",
-    price: isEurope() ? "€18" : "$20",
+    price: isEurope() ? "€29" : "$35",
     duration: "Per User/Month",
     features: [
       "Everything in Free",

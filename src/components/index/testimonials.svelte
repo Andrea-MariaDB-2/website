@@ -27,11 +27,11 @@
     transition: all 0.2s;
 
     &:hover {
-      background-color: var(--light-grey);
+      background-color: var(--dark-grey);
     }
 
     &.active {
-      background-color: var(--light-grey);
+      background-color: var(--dark-grey);
     }
   }
 </style>

@@ -45,13 +45,17 @@
   .selected {
     @apply grayscale-0 scale-150;
   }
+
+  .h5 {
+    @apply text-h6;
+  }
 </style>
 
 <div class={clazz}>
   <div
     class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
   >
-    <h5 class="mb-6 text-center justify-center w-full">Was this helpful?</h5>
+    <h2 class="h5 mb-6 text-center justify-center w-full">Was this helpful?</h2>
     {#if resultMessage}
       <p class="text-center">{resultMessage}</p>
     {:else}

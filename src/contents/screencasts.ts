@@ -4,7 +4,7 @@ let id = 1;
 const screencasts: Screencast[] = [
   {
     nextScreencast: id++,
-    title: "Always Ready-To-Code",
+    title: "Getting started with Gitpod 🍊",
     description:
       "How to get a full dev environment in your browser with the click of a button and be immediately ready-to-code.",
     duration: 120,
@@ -18,7 +18,7 @@ const screencasts: Screencast[] = [
   },
   {
     nextScreencast: id++,
-    title: "Navigating Your Workspace",
+    title: "My workspace is running, now what? 🎯",
     description: "Your workspace is running, now what?",
     duration: 201,
     tile: "screencast-2.jpg",
@@ -27,7 +27,7 @@ const screencasts: Screencast[] = [
   },
   {
     nextScreencast: id++,
-    title: "Fully Automate Your Dev Setup",
+    title: "Fully Automate Your Dev Setup ⚡️",
     description:
       "Understanding the automation benefits that arise from the concept of dev-environment-as-code.",
     duration: 264,
@@ -42,7 +42,7 @@ const screencasts: Screencast[] = [
   },
   {
     nextScreencast: id++,
-    title: "Personalize Your Workspace",
+    title: "Personalise Your Workspace 🎨",
     description:
       "How to customize and configure Gitpod for your personal needs and those of your team.",
     duration: 123,
@@ -55,7 +55,7 @@ const screencasts: Screencast[] = [
   },
   {
     nextScreencast: id++,
-    title: "Continuously Prebuild Your Project",
+    title: "Continuously Prebuild Your Project 💻",
     description:
       "How to make Gitpod load in a blink by prebuilding your project ahead-of-time, continuously.",
     duration: 128,
@@ -65,7 +65,7 @@ const screencasts: Screencast[] = [
   },
   {
     nextScreencast: id++,
-    title: "Fresh Dev Environments For Each New Task",
+    title: "Fresh Dev Environments For Each New Task 🎉",
     description:
       "Discover ephemeral/disposable workspaces and start fresh for each new task with just a single click. Pure magic!",
     duration: 195,
@@ -74,8 +74,7 @@ const screencasts: Screencast[] = [
     relatedDocs: [{ path: "", title: "Introduction to Gitpod" }],
   },
   {
-    nextScreencast: id++,
-    title: "Collaborating With Your Team",
+    title: "Collaborating With Your Team 🤝",
     description:
       "How to collaborate effectively with Gitpod's Shared Workspaces and Snapshots.",
     duration: 189,

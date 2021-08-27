@@ -13,6 +13,8 @@ Gitpod already comes well equipped for most development tasks, and provides lang
 
 Still, you may wish to customize Gitpod, or to extend it with new features. You can do this by installing VS Code extensions.
 
+`youtube: VYHsd1zI_tE`
+
 ## Installing an Extension
 
 To install a VS Code extension in Gitpod, simply go to the left vertical menu, and open the Extensions view. There you can search for an extension and install it with one click.

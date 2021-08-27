@@ -16,7 +16,7 @@ Below is a list of language and framework specific tips & tricks.
 - [HTML/CSS](/docs/languages/html)
 - [Java](/docs/languages/java)
 - [C++](/docs/languages/cpp)
-- [Go](/docs/languages/go)
+- [Golang](/docs/languages/go)
 - [Bash](/docs/languages/bash)
 - [Ruby](/docs/languages/ruby)
 - [PHP](/docs/languages/php)

@@ -12,12 +12,7 @@ const visitor = (node) => {
   }
 };
 
-module.exports = () => async (tree, vFile) => {
-  if (
-    vFile.filename.indexOf("src/routes/docs/") > 0 ||
-    vFile.filename.indexOf("src/routes/blog/") > 0
-  ) {
-    visit(tree, visitor);
-  }
+module.exports = () => async (tree) => {
+  visit(tree, visitor);
   return tree;
 };

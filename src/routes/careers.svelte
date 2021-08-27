@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-  import { hyphenate } from "../utils/helper";
+  import { stringToBeautifiedFragment } from "../utils/helper";
 
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
@@ -16,13 +16,17 @@
   let selectedCareer;
 
   $: if (selectedCareer) {
-    window.location.hash = `#${hyphenate(selectedCareer.title)}`;
+    window.location.hash = `#${stringToBeautifiedFragment(
+      selectedCareer.title
+    )}`;
     selectedCareer.focusEl && selectedCareer.focusEl.focus();
   }
 
   onMount(() => {
     const hash = window.location.hash.substring(1);
-    selectedCareer = careers.find((career) => hyphenate(career.title) === hash);
+    selectedCareer = careers.find(
+      (career) => stringToBeautifiedFragment(career.title) === hash
+    );
   });
 </script>
 
@@ -193,7 +197,7 @@
 
     <ul class="jobs">
       {#each careers as career, i}
-        <li id={hyphenate(career.title)}>
+        <li id={stringToBeautifiedFragment(career.title)}>
           <button
             bind:this={career.focusEl}
             on:click={() => {
@@ -223,7 +227,7 @@
               >
             </div>
           </button>
-          <StructuredData {career}/>
+          <StructuredData {career} />
         </li>
       {/each}
     </ul>

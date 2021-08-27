@@ -142,6 +142,7 @@
       class="btn-otherbrand"
       href="https://www.gitpod.io/direction"
       target="_blank"
+      rel="noopener"
       ><span class="icon">🗺️</span>
       <img class="arrow" src="/svg/external.svg" alt="External" />Gitpod's
       Direction</a
@@ -150,6 +151,7 @@
       class="btn-otherbrand"
       href="https://www.gitpod.io/roadmap"
       target="_blank"
+      rel="noopener"
       ><span class="icon">🛣</span>
       <img class="arrow" src="/svg/external.svg" alt="External" /> Gitpod's Roadmap</a
     >
@@ -171,6 +173,7 @@
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
       target="_blank"
+      rel="noopener"
       ><span class="icon">✨</span>
       <img class="arrow" src="/svg/external.svg" alt="External" /> Brand &amp; Values</a
     >
@@ -217,6 +220,7 @@
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
       target="_blank"
+      rel="noopener"
       ><span class="icon">💻</span>
       <img class="arrow" src="/svg/external.svg" alt="External" />How we work</a
     >
@@ -224,6 +228,7 @@
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
       target="_blank"
+      rel="noopener"
       ><span class="icon">🔨</span>
       <img class="arrow" src="/svg/external.svg" alt="External" /> How we develop</a
     >
@@ -250,6 +255,7 @@
       <a
         href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
         target="_blank"
+        rel="noreferrer"
       >
         <img
           src="/images/about/TheRegister.svg"
@@ -263,6 +269,7 @@
       <a
         href="https://www.infoq.com/articles/cloud-based-development/"
         target="_blank"
+        rel="noreferrer"
       >
         <img src="/images/about/InfoQ.svg" alt="Info Q" height="40" width="" />
       </a>
@@ -271,6 +278,7 @@
       <a
         href="https://devops.com/gitpod-open-sources-automated-local-development-environment/"
         target="_blank"
+        rel="noreferrer"
       >
         <img
           src="/images/about/DevOpsDotCom.svg"
@@ -284,6 +292,7 @@
       <a
         href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/"
         target="_blank"
+        rel="noreferrer"
       >
         <img
           src="/images/about/TheNewStack.svg"
