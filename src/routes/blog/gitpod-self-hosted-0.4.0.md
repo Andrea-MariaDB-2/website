@@ -23,7 +23,7 @@ Users log into Gitpod via OAuth from your self managed Gitlab or GitHub enterpri
 
 Gitpod Self-Hosted is truly self-hosted: it does not require an internet connection to operate as every single bit runs on your network, and Gitpod Self-Hosted won't call home.
 
-Operating Gitpod in production on gitpod.io has enabled us to battle-harden this product at scale. Both offerings share the same codebase, hence offer the same qualities regarding scalability, cloud-density, reliability, and security. All improvements that we make on Gitpod’s SaaS offering directly benefit the self-hosted version.
+Operating Gitpod in production on gitpod.io has enabled us to battle-harden this product at scale. Both offerings share the same codebase, hence offer the same qualities regarding scalability, cloud-density, reliability, and security. All improvements that we make on Gitpod’s SaaS offering directly benefit the Self-Hosted version.
 
 This release ships a plethora of bugfixes and improvements, particularly in the area of GitLab integration.
 There is one major feature that I want to show in more detail since you can't try this on gitpod.io:

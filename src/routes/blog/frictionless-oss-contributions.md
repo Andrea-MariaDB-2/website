@@ -16,7 +16,7 @@ To celebrate Open Source and Hacktoberfest, we're stoked <span aria-hidden="true
 
 ![contribute.dev projects list](https://user-images.githubusercontent.com/46004116/66307071-d695ac00-e91c-11e9-9eb1-8aa97bb6ca67.png)
 
-Setup for all of the listed projects is completely automated with the help of [Gitpod](https://gitpod.io). So within seconds, you get a fully working development environment, including a VS Code-like interface and a cloud-based Linux container configured specifically for the project. All you need is a browser!
+Setup for all of the listed projects is completely automated with the help of [Gitpod](https://gitpod.io). So within seconds, you get a fully working developer environment, including a VS Code-like interface and a cloud-based Linux container configured specifically for the project. All you need is a browser!
 
 For getting started with the project of your choice just hit the blue `Open in Gitpod` button in the bottom right corner:
 

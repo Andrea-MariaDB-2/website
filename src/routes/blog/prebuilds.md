@@ -1,7 +1,7 @@
 ---
 author: csweichel
 date: Mon Mar 18 2019 16:16:17 GMT+0000 (UTC)
-excerpt: Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous
+excerpt: Once your developer environment is freed from manual setup procedures it can do work even while you are not. We call this continuous
 image: compiling-xkcd.png
 slug: prebuilds
 subtitle: Prebuild your workspaces
@@ -13,9 +13,9 @@ url: https://medium.com/@csweichel/a1c6b25fd601
   export const prerender = true;
 </script>
 
-Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
+Once your developer environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [developer environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our developer environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
@@ -37,7 +37,7 @@ The result of _continuous development_ is a ready-to-code workspace. The second 
 
 To build a continuous development system we need three things:
 
-1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code/) of how this can be achieved.
+1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code) of how this can be achieved.
 
 1. Means to trigger an action when our code changes. The obvious candidates are [webhooks](https://developer.github.com/webhooks/), [GitHub actions](https://github.com/features/actions), or something tied in to your CI system.
 
@@ -66,7 +66,7 @@ RUN yarn install && \
     yarn build
 ```
 
-Once we’re ready to start working on a new feature, or want to review a PR, we just find the previously built Docker image and have everything ready to go. No faffing with git clone, waiting for the code to build or anything of the sorts. We have reduced many minutes of our time to a simple docker run.
+Once we’re ready to start working on a new feature, or want to review a PR, we just find the previously built Docker image and have everything ready to go. No faffing with git clone, waiting for the code to build or anything of the sorts. We have reduced many minutes of our time to a simple Docker run.
 
 A similar way of implementing this is the way [gitpod.io](https://gitpod.io) does it (full disclosure: I am one of the folks working on this project). Gitpod comes with a GitHub app that triggers _workspace prebuilds_ which in essence take your dev-environment as code (Dockerfile), execute a set of commands in there and associate the results with the particular commit that triggered it all. When you open a workspace on that commit, you’ll get the results of the prebuild instead of waiting for everything to complete.
 

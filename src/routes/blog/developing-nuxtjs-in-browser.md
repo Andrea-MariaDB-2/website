@@ -18,7 +18,7 @@ Version 2.0 of [Nuxt.js has just been released](https://medium.com/@nuxt_js/nuxt
 
 ## **Step 1: Go to GitHub and create a fresh repository.**
 
-[Gitpod.io](http://gitpod.io) uses GitHub as its dashboard. That means you start your workspaces from any states of any GitHub project. So new projects are created through GitHub, too:
+[Gitpod.io](https://gitpod.io) uses GitHub as its dashboard. That means you start your workspaces from any states of any GitHub project. So new projects are created through GitHub, too:
 
 ![GitHub Dashboard 'repositories' tab](https://cdn-images-1.medium.com/max/2048/0*I9sury8siGTS6GtF)
 

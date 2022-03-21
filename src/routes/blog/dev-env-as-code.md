@@ -6,7 +6,6 @@ image: dev-env-gilbert.png
 slug: dev-env-as-code
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
-url: dev-env-gilbert.gif
 ---
 
 <script context="module">
@@ -21,7 +20,7 @@ Today, in the age of microservice architectures, systems have become even more c
 
 ## **What about our dev environments?**
 
-While we have automated deployments of our applications, most of us don’t apply the same techniques to development environments, yet. Instead, on-boarding a new team member on any non-trivial project usually is a multiple hour (if not days) exercise.
+While we have automated deployments of our applications, most of us don’t apply the same techniques to developer environments, yet. Instead, on-boarding a new team member on any non-trivial project usually is a multiple hour (if not days) exercise.
 
 It often goes like that:
 
@@ -72,11 +71,11 @@ So let’s please stop polluting our readme files and start writing setup instru
 
 ### Dockerfiles
 
-Docker files are a pretty neat way to describe a development environment. Imagine you want to add something like ‘_asciidoctor_’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
+Docker files are a pretty neat way to describe a developer environment. Imagine you want to add something like ‘_asciidoctor_’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
 
     RUN apt-get install -y asciidoctor
 
-Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
+Once you push the change to the repository and the Docker image gets updated (automatically), all team members have the new tool in their developer environment. We need to get to coding with a single click.
 
 ![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clement-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
@@ -84,13 +83,13 @@ Once you push the change to the repository and the docker image gets updated (au
 
 The Docker approach gets a bit clumsy if your development tools have a UI such as a desktop IDE. You can package them in Docker, but you have to expose the IDE’s UI through X11. Another alternative is to go with a terminal editor like vim, but of course, that is not an option for most of us.
 
-Some desktop IDEs have tools that allow automating setups. Eclipse, for instance, has a tool called Oomph. Oomph allows you to declaratively describe an Eclipse IDE including plug-ins, configuration and even workspace setup. (i.e. git information).
+Some desktop IDEs have tools that allow automating setups. Eclipse, for instance, has a tool called Oomph. Oomph allows you to declaratively describe an Eclipse IDE including plug-ins, configuration and even workspace setup. (i.e. Git information).
 
-By far the best option is an IDE that runs in browsers, like the new [Theia I](https://theia-ide.org)DE. Theia is open-source under the Eclipse Foundation. It can be seen as VS Code that runs on browsers and desktops and is a bit more customizable.
+By far the best option is an IDE that runs in browsers, like the new [Theia](https://theia-ide.org) IDE. Theia is open-source under the Eclipse Foundation. It can be seen as VS Code that runs on browsers and desktops and is a bit more customizable.
 
 For a simple Docker-based dev environment you could add Theia to your Docker image. It offers a full IDE including terminals to your workspace image.
 
-The next step would be to treat your development environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](/) does exactly that.
+The next step would be to treat your developer environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](/) does exactly that.
 
 It integrates with code hosting platforms such as GitHub. It eliminates all the tedious transitions by automating them. You see code on some website and want to give it a spin in a real dev environment? Gitpod does everything it can to get you there with a single click. It lets you provide custom Docker files or Docker images and runs Theia IDE.
 

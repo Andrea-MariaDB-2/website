@@ -28,9 +28,9 @@ It’s strange how even though we recognise how important developer experience i
 
 ## DevX in the IDE world
 
-To illustrate how DevX has evolved to become a more seamless, joyful, efficient experience, let’s talk about the integrated development environment (IDE).
+To illustrate how DevX has evolved to become a more seamless, joyful, efficient experience, let’s talk about the integrated developer environment (IDE).
 
-A few years ago there were two approaches for devs, either use a fully-integrated development environment (IDE) that would be a fat application equipped with everything a developer could possibly need. Examples of this are Eclipse, Jetbrains’ IDEs or Apple’s Xcode. On the other end of the spectrum we would find developers who find all this tooling too heavy weight and slow. Those devs would cheer for the lightness and flexibility of command lines paired with text editors, such as sublime but also vi or emacs.
+A few years ago there were two approaches for devs, either use a fully-integrated developer environment (IDE) that would be a fat application equipped with everything a developer could possibly need. Examples of this are Eclipse, Jetbrains’ IDEs or Apple’s Xcode. On the other end of the spectrum we would find developers who find all this tooling too heavy weight and slow. Those devs would cheer for the lightness and flexibility of command lines paired with text editors, such as sublime but also vi or Emacs.
 
 Has this changed? Yes, that is the short answer to that. You can see that another IDE, namely Visual Studio Code, has since taken over.
 

@@ -9,7 +9,7 @@ const routeToHandler = (type: string) => {
     return submitExtensionFeedback;
   }
   return () => {
-    throw new Error("Pleae provide a feedback type.");
+    throw new Error("Please provide a feedback type.");
   };
 };
 

@@ -31,7 +31,7 @@ After investigating different options such as [gVisor](https://github.com/google
 
 ## Docker 🐳
 
-With the new privileges you can now also run and build Docker images to start containers within your workspace. Gitpod’s default image ([workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)) comes equipped with Docker now, so all you need to do is run `sudo docker-up` and wait until the service is listening. Now start another terminal and use the Docker CLI as usual. Here is a short screencast showing how to start a simple hello world example.
+With the new privileges you can now also run and build Docker images to start containers within your workspace. Gitpod’s default image ([workspace-full](https://github.com/gitpod-io/workspace-images/blob/d43c719bb2ff7b6849c0456fe21e3ca06c20168f/dazzle.yaml#L18)) comes equipped with Docker now, so all you need to do is run `sudo docker-up` and wait until the service is listening. Now start another terminal and use the Docker CLI as usual. Here is a short screencast showing how to start a simple hello world example.
 
 `youtube: tW9zBHH37Cc`
 
@@ -41,7 +41,7 @@ With the new privileges you can now also run and build Docker images to start co
 
 At Gitpod we want to help automate your dev environments, so that you are always ready-to-code. We believe you should not have to compromise in terms of what tools you use. Instead we make sure you get all your favourite tools readily configured and initialised for any project and task. Until today you had no choice but to use Theia, which is a great vendor-neutral IDE that leverages a lot of VS Code’s tech and provides a very similar UX. Still there are some differences in behaviour and compatibility so many users asked for supporting VS Code (and other IDEs as well).
 
-Since today you can switch between VS Code and Theia in your settings. You can even bring your own web IDE though a docker image. This enables Gitpod to run other IDEs such as all the Jetbrains IDEs (using [projector](https://github.com/JetBrains/projector-server/blob/master/docs/Projector.md)), Jupyter Notebook, or Jupyter Lab. This feature is however currently still in a private beta, so you need to contact us in order to get access to that.
+Since today you can switch between VS Code and Theia in your settings. You can even bring your own web IDE though a Docker image. This enables Gitpod to run other IDEs such as all the Jetbrains IDEs (using [projector](https://github.com/JetBrains/projector-server/blob/master/docs/Projector.md)), Jupyter Notebook, or Jupyter Lab. This feature is however currently still in a private beta, so you need to contact us in order to get access to that.
 
 `youtube: 5hArIRPZuBI`
 
@@ -53,7 +53,7 @@ We are also shipping an SSH mode in Q1/21, that will let you connect to Gitpod u
 
 ## Connect to Self-managed GitLab ❤️
 
-You can now [connect your self-hosted GitLab application with gitpod.io](/docs/gitlab-integration#oauth-application). This way you don't have to host and operate your own Gitpod installation, just to make it work with your GitLab installation. To make this connection, go to the settings and scroll down to the “Git Provider Integrations” section. Add your instance and follow the instructions.
+You can now [connect your Self-Hosted GitLab application with gitpod.io](/docs/gitlab-integration#oauth-application). This way you don't have to host and operate your own Gitpod installation, just to make it work with your GitLab installation. To make this connection, go to the settings and scroll down to the “Git Provider Integrations” section. Add your instance and follow the instructions.
 
 After completing this process, your entire team can open dev environments by prefixing the projects and merge requests URLs on the self-managed instance with `gitpod.io#` or simply use the Gitpod button provided by GitLab (make sure it is enabled).
 

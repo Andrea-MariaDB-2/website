@@ -1,5 +1,11 @@
-Contact: security@gitpod.io
-Preferred-Languages: en, de
+# Gitpod GmbH security contacts and policy
 Canonical: https://gitpod.io/.well-known/security.txt
-Hiring: hhttps://www.gitpod.io/careers
 
+Policy: https://www.gitpod.io/security/report
+Acknowledgments: https://www.gitpod.io/security/thanks
+
+Preferred-Languages: en,de
+Contact: https://www.gitpod.io/security
+Contact: mailto://security@gitpod.io
+
+Hiring: https://www.gitpod.io/careers

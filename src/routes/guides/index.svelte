@@ -8,37 +8,32 @@
 </script>
 
 <script lang="ts">
-  import OpenGraph from "../../components/open-graph.svelte";
-  import PostPreview from "../../components/blog/post-preview.svelte";
-  import Write from "./write.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PostPreview from "$lib/components/blog/post-preview.svelte";
+  import Write from "$lib/components/guides/write.svelte";
+  import Header from "$lib/components/header.svelte";
 
   export let guides = [];
 </script>
-
-<style>
-  header {
-    @apply mb-huge !important;
-  }
-</style>
 
 <OpenGraph
   data={{
     description: "Follow these guides to use Gitpod with any project",
     title: "Guides",
-    norobots: true
   }}
 />
 
-<header>
-  <h1>Guides</h1>
-  <p>Follow these guides to use Gitpod with any project</p>
-</header>
+<Header
+  title="Guides"
+  text="Follow these guides to use Gitpod with any project"
+  tight={true}
+/>
 
 <div
   class="grid justify-items-center grid-cols-1 md:grid-cols-2 max-w-4xl m-auto lg:max-w-full lg:grid-cols-1 gap-xx-small"
 >
   {#each guides as guide}
-    <PostPreview post={guide} type="guides" isMostRecent />
+    <PostPreview post={guide} layout="row" type="guides" isMostRecent />
   {/each}
 </div>
 

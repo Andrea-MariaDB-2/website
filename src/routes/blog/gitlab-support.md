@@ -16,7 +16,7 @@ We are happy to announce that you can finally enjoy Gitpod's frictionless ready-
 
 ![gitpod loves gitlab](../../../static/images/blog/gitlab-support/teaser-gitlab-gitpod.jpg)
 
-<h2 class="h1">Getting Started with GitLab and Gitpod</h2>
+## Getting Started with GitLab and Gitpod
 
 Starting a dev environment for a GitLab project works just as with GitHub, i.e. you prefix any GitLab project URL with `gitpod.io/#`.
 
@@ -27,7 +27,7 @@ Besides the standard project URL, Gitpod supports
 
 - opening file URLs
 
-  <p>Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/../petclinic/PetClinicApplication.java</a></p>
 
 - opening branches
 
@@ -72,6 +72,6 @@ All important features in Gitpod go through a beta phase, so you get the chance 
 
 ## I run GitLab Self-Managed!
 
-If you want to use Gitpod with your self-managed instance of GitLab, you'll need to wait a bit longer for Gitpod Enterprise (or [apply for our private beta](/contact)).
+If you want to use Gitpod with your self-managed instance of GitLab, you'll need to wait a bit longer for Gitpod Enterprise (or [apply for our private beta](/contact/support)).
 
 Gitpod Enterprise will be released soon and allows to run Gitpod either self-managed or managed by us. Gitpod Enterprise runs on Google Cloud or any vanilla Kubernetes installation and can be configured to connect with any GitLab or GitHub installation.

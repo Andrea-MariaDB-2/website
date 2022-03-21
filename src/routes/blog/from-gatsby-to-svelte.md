@@ -9,11 +9,15 @@ teaserImage: teaser.png
 title: From Gatsby to Svelte in 3 weeks
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **tl;dr:**
 
 - [Gitpod](/) recently announced new funding and a completely new brand ([read more](/blog/next-chapter-for-gitpod)) 🍊.
 - As part of that, we rebuilt the website from scratch, replacing React & Gatsby with [Svelte](https://svelte.dev) & [SvelteKit](https://kit.svelte.dev).
-- Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod development environment by visiting <a class="no-nowrap" href="https://gitpod.io#https://github.com/gitpod-io/website" rel="nofollow">https://gitpod.io#https://github.com/gitpod-io/website</a>.
+- Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod developer environment by visiting <a class="no-nowrap" href="https://gitpod.io#https://github.com/gitpod-io/website" rel="nofollow">https://gitpod.io#https://github.com/gitpod-io/website</a>.
 - Listen to the Svelte Radio episode "[Migrating from Sapper to SvelteKit](https://share.transistor.fm/s/507ad528)" where I shared more details.
 
 ## What we had previously...
@@ -91,10 +95,10 @@ All in all, I am excited about the future of web development not least because S
 
 ### What’s next?
 
-Head over to https://github.com/gitpod-io/website to look at the source code or experience how we work by opening an ephemeral development environment with the following button:
+Head over to https://github.com/gitpod-io/website to look at the source code or experience how we work by opening an ephemeral developer environment with the following button:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/website)
 
-To explore your own project in an online development environment, prefix your GitHub, GitLab or Bitbucket repository URL with `gitpod.io#`. [Learn more about that in the documentation](/docs/context-urls).
+To explore your own project in an online developer environment, prefix your GitHub, GitLab or Bitbucket repository URL with `gitpod.io#`. [Learn more about that in the documentation](/docs/context-urls).
 
 We welcome community contributions 🙏 . Please let us know what you think of the website and its implementation.

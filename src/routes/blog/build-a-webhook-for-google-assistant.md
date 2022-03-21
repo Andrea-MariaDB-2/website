@@ -25,7 +25,7 @@ If you have these in place, Let's get started.
 
 ## What is Gitpod?
 
-First of all I would like to start this section by saying, I ❤ Gitpod. Gitpod is an online IDE for Github. Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand. Just prefix your Github repo URL with "https://gitpod.io/#", So that the final link looks something like this "https://gitpod.io/#https://github.com/<username>/<repo-name>" or you can also use the Gitpod [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) to add the Gitpod button to Github page.
+First of all I would like to start this section by saying, I ❤ Gitpod. Gitpod is an online IDE for Github. Gitpod provides you with a fully working developer environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand. Just prefix your Github repo URL with "https://gitpod.io/#", So that the final link looks something like this "https://gitpod.io/#https://github.com/<username>/<repo-name>" or you can also use the Gitpod [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) to add the Gitpod button to Github page.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bFZMKpDV3GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Gitpod Always Ready-to-Code video" allowfullscreen></iframe>
 
@@ -157,4 +157,4 @@ Gitpod can make your life much simpler by automating your development setup just
 
 ![Animated character waving hand with a smile](https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/character.gif)
 
-<h1>Happy coding with Gitpod ✨</h1>
+<div class="h3 text-black font-bold">Happy coding with Gitpod ✨</div>

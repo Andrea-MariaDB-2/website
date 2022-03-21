@@ -1,0 +1,23 @@
+name: Docs - New Feature
+description: Use this template to make sure your new feature will be well documented.
+title: "[Docs - New Feature]: <your feature name here>"
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us write documentation for your new feature 🙏.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your feature
+      description: In as much detail as possible, please tell us about your feature.
+    validations:
+      required: true
+  - type: textarea
+    id: howtotest
+    attributes:
+      label: How to test
+      description: What are the steps required to test this feature?
+    validations:
+      required: true

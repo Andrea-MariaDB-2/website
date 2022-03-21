@@ -15,7 +15,7 @@ title: Journey to Site Reliability Engineering at Gitpod
 
 Gitpod is changing the way developers code. We're breaking the paradigm of relying on local environments to develop applications, by making those environments available through a web browser. Those environments are hosted in the cloud, they are ephemeral and they can be customized through automation to make them perfect for the project being developed.
 
-Those cloud-based environments provide everything that our users have in their local machines, including [sudo access](/blog/root-docker-and-vscode#root-access) and [docker](/blog/root-docker-and-vscode#docker), and thanks to configuration-as-code (that can be automated) they remove the friction of installing and managing all different kinds of dependencies that we have when working on multiple projects. We want the world to forget about local environments and completely focus on our cloud-based environments.
+Those cloud-based environments provide everything that our users have in their local machines, including [sudo access](/blog/root-docker-and-vscode#root-access) and [Docker](/blog/root-docker-and-vscode#docker), and thanks to configuration-as-code (that can be automated) they remove the friction of installing and managing all different kinds of dependencies that we have when working on multiple projects. We want the world to forget about local environments and completely focus on our cloud-based environments.
 
 _We gave those cloud-based environments a unique name: "Workspaces"._
 
@@ -25,7 +25,7 @@ Gitpod is scaling! [We are glad to be backed by fantastic investors](/blog/next-
 
 ## Reliability vs Velocity
 
-Of course, Gitpod is a lot more than just an IDE with a terminal in the cloud. We have tons of features that make Gitpod shine amongst all other cloud-based development environments, such as [Prebuilds](/docs/prebuilds), [Sudo and Docker support](/blog/root-docker-and-vscode), [Shareable Workspaces](/docs/sharing-and-collaboration), while not mentioning our [Roadmap](https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203) that is pretty ambitious too.
+Of course, Gitpod is a lot more than just an IDE with a terminal in the cloud. We have tons of features that make Gitpod shine amongst all other cloud-based developer environments, such as [Prebuilds](/docs/prebuilds), [Sudo and Docker support](/blog/root-docker-and-vscode), [Shareable Workspaces](/docs/sharing-and-collaboration), while not mentioning our [Roadmap](https://www.gitpod.io/roadmap) that is pretty ambitious too.
 
 Developing and shipping new features is one of the things that make us more excited about our work, and hopefully our users too 😅, but making changes to production also comes with the risk of breaking stuff that was working just fine previously. Breaking small things is usually okay and we can keep focusing on new features, but we may break Gitpod so much that user experience decreases to a level that makes our users unhappy. That is a big no-no for us. If our users are unhappy then we need to do something about it, even if that means slowing down new features or completely stop them to fully focus on reliability depending on how bad the situation is. _But how do we decide if we should be focusing on reliability or feature velocity?_
 

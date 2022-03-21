@@ -3,8 +3,12 @@
 </script>
 
 <script lang="ts">
-  import type { Form } from "../types/form.type";
-  import OpenGraph from "../components/open-graph.svelte";
+  import type { Form } from "$lib/types/form.type";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import Header from "$lib/components/header.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
+  import Button from "$lib/components/ui-library/button";
+  import Card from "$lib/components/ui-library/card";
 
   const extensionUrls = {
     chrome:
@@ -77,13 +81,14 @@
   };
 </script>
 
-<style type="text/postcss">
-  header {
-    @apply mb-0 !important;
-  }
-
+<style lang="postcss">
   form li {
     @apply mb-0;
+  }
+
+  fieldset {
+    display: flex;
+    flex-flow: row wrap;
   }
 </style>
 
@@ -95,15 +100,19 @@
   }}
 />
 
-<header>
-  {#if extensionUrl}
-    <a href={extensionUrl} rel="noopener" target="_blank">Reinstall Extension</a
-    >
-  {/if}
-  <h1>How Can We Improve?</h1>
-</header>
-<section
-  class="card card shadow-xl mb-32 sm:mx-8 lg:flex lg:items-center lg:justify-around"
+<Header title="How Can We Improve?" tight={true}>
+  <div slot="top">
+    {#if extensionUrl}
+      <a href={extensionUrl} rel="noopener" target="_blank"
+        >Reinstall Extension</a
+      >
+    {/if}
+  </div>
+</Header>
+
+<Card
+  size="small"
+  class="p-xx-small sm:py-small sm:px-x-small md:p-medium mb-32 sm:mx-8 lg:flex lg:items-center lg:justify-around"
 >
   <div class="letter lg:w-2/5 lgpr-xx-small mb-small">
     <p class="text-large">
@@ -154,14 +163,15 @@
           </ul>
         </fieldset>
       </li>
-      <li class:error={isFormDirty && !formData.otherFeedback.valid}>
-        <textarea
+      <li>
+        <Textarea
           aria-label="Do you have any other feedback?"
           placeholder="Do you have any other feedback?"
           id="otherFeedback"
-          name="otherFeedback"
+          hasError={isFormDirty && !formData.otherFeedback.valid}
+          name="feedback"
           bind:value={formData.otherFeedback.value}
-          bind:this={formData.otherFeedback.el}
+          bind:element={formData.otherFeedback.el}
           cols="20"
           rows="4"
           on:change={() => {
@@ -173,15 +183,22 @@
         />
       </li>
       <li>
-        <button
-          class="btn-cta mt-x-small"
+        <Button
+          variant="cta"
+          size="large"
+          class="mt-x-small"
           disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
-          type="submit">Send</button
+          type="submit">Send</Button
         >
+        {#if isFormDirty && !isFormValid}
+          <legend class="text-xs text-error block mt-1 mb-2">
+            Please fill out all required fields above
+          </legend>
+        {/if}
       </li>
     </ul>
     {#if isFeedbackSent}
       <p>Thanks for your Feedback</p>
     {/if}
   </form>
-</section>
+</Card>

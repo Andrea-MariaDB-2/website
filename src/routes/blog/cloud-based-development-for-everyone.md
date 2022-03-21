@@ -48,7 +48,7 @@ Putting developer experience first means working in developer environments that 
 For your day-to-day workflow this means that your developer environments become:
 
 - **Task-based** - for each Git context you start them, you code, you push your code, and you forget about them. For your next task, you’ll use a fresh one.
-- **Prebuilt** - Gitpod continuously builds all your git branches like a CI server. Whenever your code changes (i.e. when new commits are pushed to your repository), Gitpod will prebuild workspaces, i.e. run the init commands in your .gitpod.yml configuration file before you even start a workspace.
+- **Prebuilt** - Gitpod continuously builds all your Git branches like a CI server. Whenever your code changes (i.e. when new commits are pushed to your repository), Gitpod will prebuild workspaces, i.e. run the init commands in your .gitpod.yml configuration file before you even start a workspace.
 - **Shareable** - similar to preview environments in CI/CD dev environments ephemeral dev environments become easily shareable with your colleagues via a URL.
 
 In the screencast below, [@paulienuh](https://twitter.com/paulienuh) explains how that workflow has supercharged our development velocity while developing Gitpod in Gitpod.

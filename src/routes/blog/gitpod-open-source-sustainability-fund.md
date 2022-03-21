@@ -17,7 +17,7 @@ The myriad of tools relied upon by developers every day is built and maintained 
 
 Open-source, by design, is not financially sustainable. Finding reliable, well-defined funding sources is exceptionally challenging. As projects grow in size, many maintainers burn-out, find themselves unable to satisfy increasing support/maintenance demands and, unfortunately, in my particular case, <a href="https://ghuntley.com/a-new-chapter">irrevocably harm their marriage</a>.
 
-<a hre="https://twitter.com/freakboy3742">Russell Keith-Magee</a> delivered this beautiful keynote at PyCon, which captures the essence better than I can put in writing because it is such a personal topic.
+<a href="https://twitter.com/freakboy3742">Russell Keith-Magee</a> delivered this beautiful keynote at PyCon, which captures the essence better than I can put in writing because it is such a personal topic.
 
 `youtube: 0t85TyH-h04`
 
@@ -45,25 +45,25 @@ At Gitpod, we firmly believe that working for an open-source project should be a
 
 Today we are announcing five things:
 
-<h3 class="h4">Open Source Sustainability Fund</h3>
+### Open Source Sustainability Fund
 
 Gitpod has created an open-source sustainability fund and allocated an _initial_ amount of USD 30,000 towards securing our open-source supply chain by paying open-source maintainers.
 
-<h3 class="h4">$1 for each new community member</h3>
+### $1 for each new community member
 
 For every registration to our newly created <a href="https://www.gitpod.io/chat">discord channel</a> during the next month we’ll donate an additional $1 to open-source projects we depend upon.
 
-<h3 class="h4">DevX Conf</h3>
+### DevX Conf
 
 The upcoming (<a href="https://devxconf.org/">28th of April from 5pm CEST</a>) non-profit conference on developer experience - DevX Conf will donate all surplus and USD 500 for each Gold Sponsor to open-source projects. Additionally attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
 
-<h3 class="h4">Build in the open</h3>
+### Build in the open
 
 Over the coming months, Gitpod will share our experiences with funding open-source projects for other companies to follow and share insights for maintainers who wish to become financially independent.
 
-<h3 class="h4">Democratize contributions</h3>
+### Democratize contributions
 
-We recognise that money <a class="no-nowrap" href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
+We recognise that money <a class="no-nowrap" href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/for/opensource">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized developer environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
 
 ## It's time to start giving back
 
@@ -120,7 +120,7 @@ Gitpod has plenty of smaller dependencies for doing activities such as parsing T
 
 For dependencies that are of strategic importance, then the strategy would be a combination of financial support, becoming regular contributors to the project or even hiring the maintainers of these projects as engineers for [short|long]-term engagements.
 
-Do you have more ideas on how funding can foster a diverse community? → Please <a href="/contact">get in contact</a>.
+Do you have more ideas on how funding can foster a diverse community? → Please <a href="/contact/support">get in contact</a>.
 
 ## See you at DevX Conference
 

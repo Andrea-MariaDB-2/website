@@ -1,0 +1,106 @@
+/blog/gitlab-integration/+ /blog/gitlab-integration 301
+/careers https://gitpod.crew.work/jobs 301
+/chat https://discord.com/invite/gitpod 301
+/cla https://www.github.com/gitpod-io/cla
+/code-of-conduct https://github.com/gitpod-io/.github/blob/main/CODE_OF_CONDUCT.md
+/configure/editor /docs/editors/vscode 301
+/direction https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6 301
+/docs/10_getting_started /docs/getting-started 301
+/docs/10_Getting_Started /docs/getting-started 301
+/docs/20_browser_extension /docs/browser-extension 301
+/docs/20_Browser_Extension /docs/browser-extension 301
+/docs/30_workspaces /docs/workspaces 301
+/docs/31_context_urls /docs/context-urls 301
+/docs/32_life_of_workspace /docs/life-of-workspace 301
+/docs/32_Life_of_Workspace /docs/life-of-workspace 301
+/docs/33_sharing_and_collaboration /docs/sharing-and-collaboration 301
+/docs/33_Sharing_and_Collaboration /docs/sharing-and-collaboration 301
+/docs/34_command_line_interface /docs/command-line-interface 301
+/docs/40_configuration /docs/configure 301
+/docs/40_Configuration /docs/configure 301
+/docs/41_config_gitpod_file /docs/config-gitpod-file 301
+/docs/41_Config_Gitpod_File /docs/config-gitpod-file 301
+/docs/42_config_docker /docs/config-docker 301
+/docs/43_config_ports /docs/config-ports 301
+/docs/44_config_start_tasks /docs/config-start-tasks 301
+/docs/45_checkout_location /docs/checkout-location 301
+/docs/45_Checkout_Location /docs/checkout-location 301
+/docs/45_Config_Go /docs/checkout-location 301
+/docs/46_prebuilds /docs/prebuilds 301
+/docs/47_environment_variables /docs/environment-variables 301
+/docs/47_Environment_Variables /docs/environment-variables 301
+/docs/50_ide /docs/ide 301
+/docs/52_tips_and_tricks /docs/tips-and-tricks 301
+/docs/54_git /docs/git 301
+/docs/56_search /docs/search 301
+/docs/58_pull_requests /docs/pull-requests 301
+/docs/58_Pull_Requests /docs/pull-requests 301
+/docs/59_code_review /docs/code-review 301
+/docs/60_dashboard /docs/dashboard 301
+/docs/70_subscription /docs/subscription 301
+/docs/80_release_notes /docs/release-notes 301
+/docs/bash-in-gitpod /docs/languages/bash 301
+/docs/changelog /changelog 301
+/docs/configuration /docs/configure 301
+/docs/cpp-in-gitpod /docs/languages/cpp 301
+/docs/develop/vscode-desktop-support /docs/editors/vscode 301
+/docs/dotnet-in-gitpod /docs/languages/dotnet 301
+/docs/go_in_gitpod /docs/go-in-gitpod 301
+/docs/go-in-gitpod /docs/languages/go 301
+/docs/html-in-gitpod /docs/languages/html 301
+/docs/ide /docs/editors 301
+/docs/editors /docs/ides-and-editors 301
+/docs/editors/vscode-browser /docs/ides-and-editors/vscode-browser
+/docs/editors/Goland /docs/ides-and-editors/Goland
+/docs/editors/intellij /docs/ides-and-editors/intellij
+/docs/editors/vscode /docs/ides-and-editors/vscode
+/docs/editors/clion /docs/ides-and-editors/clion
+/docs/editors/datagrip /docs/ides-and-editors/datagrip
+/docs/editors/phpstorm /docs/ides-and-editors/phpstorm
+/docs/editors/pycharm /docs/ides-and-editors/pycharm
+/docs/editors/rider /docs/ides-and-editors/rider
+/docs/editors/rubymine /docs/ides-and-editors/rubymine
+/docs/editors/webstorm /docs/ides-and-editors/webstorm
+/docs/develop/local-companion /docs/ides-and-editors/local-companion 301
+/docs/vscode-extensions /docs/ides-and-editors/vscode-extensions 301
+/docs/index.html /docs 301
+/docs/integrations/jetbrains /docs/editors 301
+/docs/java_in_gitpod /docs/java-in-gitpod 301
+/docs/java-in-gitpod /docs/languages/java 301
+/docs/julia_in_gitpod /docs/julia-in-gitpod 301
+/docs/julia-in-gitpod /docs/languages/julia 301
+/docs/languages_and_frameworks /docs/languages-and-frameworks 301
+/docs/languages/pandas /docs/languages/python#pandas 301
+/docs/php-in-gitpod /docs/languages/php 301
+/docs/professional-open-source /for/opensource 301
+/docs/python_in_gitpod /docs/python-in-gitpod 301
+/docs/python-in-gitpod /docs/languages/python 301
+/docs/r-in-gitpod /docs/languages/r 301
+/docs/ruby-in-gitpod /docs/languages/ruby 301
+/docs/rust-in-gitpod /docs/languages/rust 301
+/docs/self-hosted/latest/self-hosted /docs/self-hosted/latest 301
+/docs/self-hosted/latest/installation/on-kubernetes /docs/self-hosted/latest/installation 301
+/docs/vue-in-gitpod /docs/languages/vue 301
+/docs/editors/jetbrains-private-beta /docs/editors/ 301
+/education /pricing#do-you-offer-discounts-for-students-and-educational-institutions 301
+/gitpod-business.html /pricing 301
+/gitpod-vs-codespaces /vs/github-codespaces 301
+/media /blog/next-chapter-for-gitpod 301
+/memes https://github.com/gitpod-io/gitpod/issues/6877 301
+/privacy/terms.html /terms 301
+/references/changelog /changelog 301
+/roadmap https://github.com/orgs/gitpod-io/projects/27/views/1 301
+/screencasts/always-ready-to-code /screencasts/getting-started-with-gitpod 301
+/screencasts/navigating-your-workspace /screencasts/my-workspace-is-running-now-what 301
+/values https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e
+/dashboard https://gitpod.io/ 301
+/projects https://gitpod.io/ 301
+/workspaces https://gitpod.io/workspaces/ 301
+/settings https://gitpod.io/account 301
+/notifications https://gitpod.io/notifications 301
+/plans https://gitpod.io/plans 301
+/teams https://gitpod.io/teams 301
+/variables https://gitpod.io/variables 301
+/integrations https://gitpod.io/integrations 301
+/preferences https://gitpod.io/preferences 301
+/gitpod-vs-github-codespaces /vs/github-codespaces 301

@@ -4,12 +4,16 @@ date: Wed May 06 2020 16:00:00 GMT+0000 (UTC)
 excerpt: Today, GitHub announced the private beta of GitHub Codespaces, which provide container-based dev environments for GitHub projects.
 image: gh-cs-bg.jpg
 slug: github-codespaces
-subtitle: A Milestone for Automated Development Environments
+subtitle: A Milestone for Automated Developer environments
 title: GitHub Codespaces, Welcome to the Party!
 ---
 
 <script context="module">
   export const prerender = true;
+</script>
+
+<script>
+  import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte"
 </script>
 
 Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code.
@@ -18,7 +22,7 @@ This is great news, because it really helps to explain why this is going to chan
 
 <h2>Dev Environment As Code</h2>
 
-Describing development environments in code has many benefits:
+Describing developer environments in code has many benefits:
 
 - It eliminates onboarding friction: no matter if you are new to a project, need to go back to an old branch or just picking up development after a few weeks. Just go to your project and start coding immediately.
 
@@ -36,7 +40,7 @@ As software systems become more complex so do dev environments. Have you ever tr
 
 When we started working on Gitpod, we had everything running locally in minikube, too. Very quickly we realized that this would not scale. Our SaaS offering is deployed in Kubernetes clusters across the globe—that’s nothing you’d want to replicate locally.
 
-For the past year the whole team has developed Gitpod in Gitpod. Everyone in the team can start coding on any branch immediately. That includes their own preview deployment which is already connected to and fully debuggable from their browser-based development environment. For a more in-depth look at our development pipeline—and what’s in it for you—check out [Chris’ talk](https://www.youtube.com/watch?v=dFMpXUsJcGM) (inlined below) and our [previous post](https://www.freecodecamp.org/news/developing-kubernetes-applications-with-joy/) on the matter.
+For the past year the whole team has developed Gitpod in Gitpod. Everyone in the team can start coding on any branch immediately. That includes their own preview deployment which is already connected to and fully debuggable from their browser-based developer environment. For a more in-depth look at our development pipeline—and what’s in it for you—check out [Chris’ talk](https://www.youtube.com/watch?v=dFMpXUsJcGM) (inlined below) and our [previous post](https://www.freecodecamp.org/news/developing-kubernetes-applications-with-joy/) on the matter.
 
 `youtube: dFMpXUsJcGM`
 
@@ -62,7 +66,7 @@ This new generation of Theia-based Web-IDEs go way beyond online-playgrounds whi
 
 <h2>What About GitLab, Atlassian’s Bitbucket, and Other Git Hosting?</h2>
 
-We are thrilled to see GitHub/Microsoft investing in automated development environments as it will help convince developers around the world and get this new way of developing software adopted faster.
+We are thrilled to see GitHub/Microsoft investing in automated developer environments as it will help convince developers around the world and get this new way of developing software adopted faster.
 
 But most professional development happens on other platforms such as GitLab, Atlassian’s stack and of course good old GitWeb. Oftentimes companies even employ a mixture of these.
 
@@ -78,12 +82,10 @@ Today we are releasing a new version which brings Gitpod Self-Hosted on par with
 
 <h2>Summary</h2>
 
-We are quickly headed into a wonderful future, where developers are no longer intimidated by tedious and outdated setup procedures. Professional software projects will provide automated, prebuilt development environments that enable teams to start contributing, doing code reviews, reproducing bugs or just exploring new ideas immediately from any device securely.
+We are quickly headed into a wonderful future, where developers are no longer intimidated by tedious and outdated setup procedures. Professional software projects will provide automated, prebuilt developer environments that enable teams to start contributing, doing code reviews, reproducing bugs or just exploring new ideas immediately from any device securely.
 
-CI/CD has taught us how versioned, reproducible infrastructure as code is key to scale modern software development. Now it is time to apply these lessons to our development environments and furthermore improve our lead times getting from ideas to production.
+CI/CD has taught us how versioned, reproducible infrastructure as code is key to scale modern software development. Now it is time to apply these lessons to our developer environments and furthermore improve our lead times getting from ideas to production.
 
 Experience the future of software development now!
 
-<a class="btn-conversion mt-xx-small" href="/">
-  Try Gitpod.io
-</a>
+<LinkButton class="mt-xx-small" href="/" variant="primary" size="large">Try Gitpod.io</LinkButton>

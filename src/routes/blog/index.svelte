@@ -8,26 +8,21 @@
 </script>
 
 <script lang="ts">
-  import type { BlogPost } from "../../types/blog-post.type";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import PostPreview from "../../components/blog/post-preview.svelte";
-  import NewsletterSignup from "../../components/blog/newsletter-signup.svelte";
+  import type { BlogPost } from "$lib/types/blog-post.type";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PostPreview from "$lib/components/blog/post-preview.svelte";
+  import Section from "$lib/components/section.svelte";
 
   export let posts: BlogPost[];
 </script>
 
-<style>
-  section {
-    margin-top: var(--xx-large);
-    text-align: center;
-  }
-
-  h2 {
-    margin-bottom: var(--small);
-  }
-
+<style lang="postcss">
   .blog-layout {
-    @apply pb-10;
+    @apply mb-xx-large;
+
+    @media (max-width: 972px) {
+      @apply mb-x-large;
+    }
   }
 </style>
 
@@ -35,30 +30,34 @@
   <OpenGraph
     data={{
       description:
-        "Visit the Gitpod blog to learn about releases, tutorials, news and more.",
-      title: "Blog",
+        "The latest news, articles, and opinions around developer experience and remote development in the cloud.",
+      title: "Gitpod Blog - News, ideas and background stories",
+      keywords: "blog, tutorial, news, articles",
     }}
   />
-  <section>
-    <h1>Blog</h1>
-  </section>
-  <div class="posts-grid">
-    {#each posts.slice(0, 6) as post}
-      <div class="posts-grid__item">
-        <PostPreview {post} type="blog" isMostRecent />
-      </div>
-    {/each}
-  </div>
+  <Section>
+    <h1 class="text-center">Blog</h1>
+    <div
+      class="grid m-auto max-w-7xl w-full gap-6 grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3"
+    >
+      {#each posts.slice(0, 6) as post}
+        <div class="flex justify-center min-w-[20rem] max-w-sm">
+          <PostPreview {post} type="blog" isMostRecent />
+        </div>
+      {/each}
+    </div>
+  </Section>
 
-  <section>
-    <h2>Previous posts</h2>
-  </section>
-  <div class="posts-grid previous">
-    {#each posts.slice(6) as post}
-      <div class="posts-grid__item">
-        <PostPreview {post} type="blog" />
-      </div>
-    {/each}
-  </div>
+  <Section>
+    <h2 class="mb-small text-center">Previous posts</h2>
+    <div
+      class="previous grid m-auto max-w-7xl w-full gap-6 grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3"
+    >
+      {#each posts.slice(6) as post}
+        <div class="flex justify-center min-w-[20rem] max-w-sm">
+          <PostPreview {post} type="blog" />
+        </div>
+      {/each}
+    </div>
+  </Section>
 </div>
-<NewsletterSignup class="mx-auto mt-large mb-huge" />

@@ -3,10 +3,11 @@
 </script>
 
 <script lang="ts">
-  import Feature from "../components/feature.svelte";
-  import { feature } from "../contents/extension-activation";
-  import Config from "../components/extension-activation/config.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
+  import Feature from "$lib/components/feature.svelte";
+  import { feature } from "$lib/contents/extension-activation";
+  import Config from "$lib/components/extension-activation/config.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import Header from "$lib/components/header.svelte";
 
   const currentBrowser = ["Opera", "Chrome", "Firefox", "IE"].find(
     (browser) =>
@@ -36,14 +37,6 @@
   ];
 </script>
 
-<style type="text/postcss">
-  article h2 {
-    @media (min-width: 930px) {
-      @apply pb-medium;
-    }
-  }
-</style>
-
 <OpenGraph
   data={{
     description: "The browser extension has been installed.",
@@ -52,21 +45,29 @@
   }}
 />
 
-<header>
-  <h1>Gitpod for {currentBrowser} is Now Active</h1>
-  <p>The browser extension has been installed</p>
-</header>
+<Header
+  title="Gitpod for {currentBrowser} is Now Active"
+  text="The browser extension has been installed."
+/>
 
 <Feature {feature} />
 
 <Config />
 
-<section class="cards triple sm:pb-huge">
+<section
+  class="flex items-center lg:items-stretch flex-col lg:flex-row sm:pb-huge space-y-small lg:space-y-0 lg:space-x-xx-small"
+>
   {#each features as feature}
-    <div class="py-small px-xx-small bg-gray-100 rounded-4xl">
+    <div
+      class="text-center py-small px-xx-small bg-gray-100 rounded-4xl lg:w-1/3 max-w-md"
+    >
       <div>
         <!-- svelte-ignore a11y-missing-attribute -->
-        <img src={feature.icon} role="presentation" height="100" width="100" />
+        <img
+          src={feature.icon}
+          role="presentation"
+          class="mx-auto mb-xx-small h-28 w-28"
+        />
         <h2 class="h3">{feature.title}</h2>
         <p>{feature.description}</p>
       </div>

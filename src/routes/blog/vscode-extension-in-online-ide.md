@@ -9,6 +9,10 @@ teaserImage: tools.jpg
 title: Your Favorite VS Code Extension in an Online IDE
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Today, we are excited to announce the start of our public beta phase for VS Code extensions in Gitpod, the next generation cloud IDE.
 
 So far Gitpod supported the mainstream languages like JavaScript, Java, Python, Ruby, Rust, C++ and Go, but many others weren't covered yet. With today's release, we have added support for installing any of the 10K+ existing extensions for VS Code. Finally, Scala, Swift and F# developers will feel at home in Gitpod, too.
@@ -21,7 +25,7 @@ That’s because a Gitpod dev environment is tailored and optimized for the proj
 
 > Traditionally you would maintain one bloated editor for all your projects or alternatively maintain multiple per project.
 
-Gitpod solves this problem for you by providing a small configuration that is part of your git history. This includes information about dependencies, start up tasks and now also lists the extensions needed for the project at that point in time (version).
+Gitpod solves this problem for you by providing a small configuration that is part of your Git history. This includes information about dependencies, start up tasks and now also lists the extensions needed for the project at that point in time (version).
 
 Here is how it works:
 

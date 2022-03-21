@@ -27,7 +27,7 @@ Homebrew is quite convenient, and its packages are very well maintained: You'll 
 
 What you may not necessarily know is that Homebrew now works on Linux too (it was originally announced as "Linuxbrew", but now it's just called [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux)). This got us pretty excited, because we saw it as an opportunity for developers to easily install any software package in Gitpod, without needing to set up a Dockerfile and then fire up another workspace to test it. With Homebrew you can simply run `brew install z` and get going!
 
-We've pre-installed `brew` for all Gitpod workspaces (using [workspace-full](https://github.com/gitpod-io/workspace-images/blob/d353ffe08c602095a8f3df7d690934c25643a6ca/full/Dockerfile#L104-L107)) and now that we've played with it for a while and are happy with the experience, we're excited to announce it so that you can try it too:
+We've pre-installed `brew` for all Gitpod workspaces (using [workspace-full](https://github.com/gitpod-io/workspace-images/blob/d43c719bb2ff7b6849c0456fe21e3ca06c20168f/dazzle.yaml#L30)) and now that we've played with it for a while and are happy with the experience, we're excited to announce it so that you can try it too:
 
 1. Just open any repository in Gitpod (e.g. the [Spring PetClinic](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic))
 2. Try running `brew install fzf` (this should give you the awesome [fzf](https://github.com/junegunn/fzf) tool)

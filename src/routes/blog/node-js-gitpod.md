@@ -14,7 +14,7 @@ url: https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f
 
 Gitpod is based on the open-source Theia IDE Framework, which is highly inspired by VS Code, reuses its major components like the Monaco editor and intelligent-language support and is designed to run as a web application.
 
-At TypeFox, we use Gitpod to develop Theia and all its satellite projects, like Theia extensions and language servers. We’ve discovered that for most use cases we don’t need to go to local development anymore. Development, testing, and the review processes are streamlined, leading from source code to a proper development environment accessible from a browser with a single click.
+At TypeFox, we use Gitpod to develop Theia and all its satellite projects, like Theia extensions and language servers. We’ve discovered that for most use cases we don’t need to go to local development anymore. Development, testing, and the review processes are streamlined, leading from source code to a proper developer environment accessible from a browser with a single click.
 
 Up to now, there was one important use case that forced us back to local tools, because it was not supported by Gitpod: Debugging.
 

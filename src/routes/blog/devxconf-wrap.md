@@ -1,13 +1,17 @@
 ---
 author: christinfrohne, ghuntley
 date: Thursday, 3 Jun 2021 11:00:00 UTC
-excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.
+excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where USD 10,000 of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.
 image: teaser.png
 slug: devxconf-wrap
 subtitle:
 teaserImage: teaser.png
-title: DevX Conf wrap & distributing $10k of open-source funding
+title: DevX Conf wrap & distributing USD 10k of open-source funding
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 On April 28- 29 we hosted the [DevX Conference](http://www.devxconf.org), a space where creators could collaborate, listen, discuss and declutter dev workflows, toolchains and minds. To improve developer experience. We wanted to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating on, and running software.
 
@@ -71,7 +75,7 @@ Attendees of the DevX Conference were able to vote once for each of the projects
 
 In total there were 17 projects that were available for voting:
 
-<div class="table-container">
+<div class="overflow-x-auto">
 
 | Name                                                                                                                                                                                                                                                                                  | URL                                                 | Split of funding from $10k USD |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------ |
@@ -89,7 +93,7 @@ In total there were 17 projects that were available for voting:
 | 12. **shellcheck** is a tool that gives warnings and suggestions for bash/sh shell scripts:                                                                                                                                                                                           | https://github.com/koalaman/shellcheck              | $1690.14                       |
 | 13. **patch-package** lets app authors instantly make and keep fixes to npm dependencies. A vital band-aid for javascript developers living on the bleeding edge.                                                                                                                     | https://github.com/ds300/patch-package              | $211.27                        |
 | 14. **php-language-server** is an implementation of Language Server Protocol for the PHP programming language.                                                                                                                                                                        | https://github.com/felixfbecker/php-language-server | $492.96                        |
-| 15. pre-commit is a framework for managing and maintaining multi-language pre-commit git hooks.                                                                                                                                                                                       | https://github.com/pre-commit/pre-commit            | $1197.18                       |
+| 15. pre-commit is a framework for managing and maintaining multi-language pre-commit Git hooks.                                                                                                                                                                                       | https://github.com/pre-commit/pre-commit            | $1197.18                       |
 | 16. **vim-lsp** is an async Language Server Protocol plugin for vim8 and neovim.                                                                                                                                                                                                      | https://github.com/prabirshrestha/vim-lsp           | $492.96                        |
 | 17. **yamllint** is a linter for YAML.                                                                                                                                                                                                                                                | https://github.com/adrienverge/yamllint             | $1056.34                       |
 

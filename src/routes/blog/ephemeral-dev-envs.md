@@ -10,17 +10,21 @@ title: DevX Digest 02 - The rise of ephemeral developer environments ✨
 type: digest
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **Welcome to DevX Digest - the place to hear all about Developer Experience**, brought to you by Pauline Narvas [(@paulienuh)](https://twitter.com/paulienuh) and Mike Nikles [(@mikenikles)](https://twitter.com/mikenikles) from Gitpod. You're reading another newsletter from us 🎉! In this edition, we talk about developer experience in cloud-based,ephemeral dev environments.
 
-> Disclaimer: Gitpod is mentioned quite a bit here. Apologies in advance for the product placement -- we promise that the next 10 editions won't be about our product! But we were super excited to share our take on ephemeral development environments, especially with the excitement recently in the developer community.
+> Disclaimer: Gitpod is mentioned quite a bit here. Apologies in advance for the product placement -- we promise that the next 10 editions won't be about our product! But we were super excited to share our take on ephemeral developer environments, especially with the excitement recently in the developer community.
 
 ## The move to the Cloud ☁️
 
-Let’s name the 🐘 in the room: GitHub announced the release of CodeSpaces to Team and Enterprise Cloud plans recently. This generated quite some buzz online, with many asking how moving our development environments to the cloud would benefit us.
+Let’s name the 🐘 in the room: GitHub announced the release of CodeSpaces to Team and Enterprise Cloud plans recently. This generated quite some buzz online, with many asking how moving our developer environments to the cloud would benefit us.
 
-### Painting the picture: our local development environment
+### Painting the picture: our local developer environment
 
-The reality for most developers is this: a local development environment that is difficult to set up and maintain and eats up productivity significantly.
+The reality for most developers is this: a local developer environment that is difficult to set up and maintain and eats up productivity significantly.
 
 Think about your current workflow when getting started to code. What do you need to do?
 
@@ -40,19 +44,19 @@ But in the familiar situation of reviewing a colleague's features and hotfixes f
 - Once we're done with the review, we have to switch back to our branch to continue coding.
 - Ensure that we return to our previous state to continue working.
 
-There is so much friction for developers when there shouldn't be. Ideally, all we really wanted to do is look at the code, run it and approve the PR. Ephemeral development environments can do this, ensuring that you're always ready to code.
+There is so much friction for developers when there shouldn't be. Ideally, all we really wanted to do is look at the code, run it and approve the PR. Ephemeral developer environments can do this, ensuring that you're always ready to code.
 
-### Consider an ephemeral development environment
+### Consider an ephemeral developer environment
 
 > "Treat your infrastructure as cattle, not pets"
 
 ...is the saying often used in the DevOps world. The value of describing infrastructure as repeatable code became apparent and reaped many benefits: no more dreaded configuration drift, consistent infrastructure and many automation possibilities!
 
-Bringing that peace of mind to development environments makes sense and is already possible. For instance, a single `.gitpod.yml` file is used to describe your dev environment, including what dependencies and start-up commands are needed to get you to the position where you can start coding.
+Bringing that peace of mind to developer environments makes sense and is already possible. For instance, a single `.gitpod.yml` file is used to describe your dev environment, including what dependencies and start-up commands are needed to get you to the position where you can start coding.
 
-Your dev environment then becomes ephemeral. Gitpod continuously builds all your git branches like a CI server. You have a new, consistent environment for every single task, and once you're done with a workspace, you can close it and start another super quickly because it has already been prebuilt.
+Your dev environment then becomes ephemeral. Gitpod continuously builds all your Git branches like a CI server. You have a new, consistent environment for every single task, and once you're done with a workspace, you can close it and start another super quickly because it has already been prebuilt.
 
-Ephemeral development environments reduce friction and improve developer experience massively - let us demonstrate that with specific workflows in more detail.
+Ephemeral developer environments reduce friction and improve developer experience massively - let us demonstrate that with specific workflows in more detail.
 
 ### Workflow #1: Onboarding 💼
 
@@ -60,13 +64,13 @@ Think back to when you were first onboarding to a new company. Onboarding has be
 
 Until you do because you have a new laptop, a new engineer comes along or external developers and experts join your project and experience that same pain.
 
-There is no hiding that our local development environments are fragile. This fact can cause new engineers onboarding to your new codebase to feel frustrated and overwhelmed.
+There is no hiding that our local developer environments are fragile. This fact can cause new engineers onboarding to your new codebase to feel frustrated and overwhelmed.
 
-Ephemeral dev environments can improve this: **no more local development environments mean that it will always work on your machine, no matter what machine you have.** You can quickly access your whole environment in a browser that new engineers can easily jump right into.
+Ephemeral dev environments can improve this: **no more local developer environments mean that it will always work on your machine, no matter what machine you have.** You can quickly access your whole environment in a browser that new engineers can easily jump right into.
 
 ### Workflow #2: Developing a Feature 🛠
 
-The uphill battle of developing a new feature locally, does not happen in cloud development environments. It’s no longer such an energy-inducing task!
+The uphill battle of developing a new feature locally, does not happen in cloud developer environments. It’s no longer such an energy-inducing task!
 
 Instead of creating a new feature branch, pulling the latest code, fixing errors related to dependencies or runtime versions, then finally starting a dev server and database, you can start developing straight away with literally a click of a button or prefixing a repo with `https://gitpod.io/#`
 
@@ -96,16 +100,16 @@ Want to contribute to an open-source project?
 
 The friction that comes with onboarding to open-source projects can cause eager contributors to lose their interest quickly. Trying to get themselves set up is almost not even worth the pain!
 
-Onboarding is easy with ephemeral environments, as we described in [workflow #1.](/blog/the-rise-of-ephemeral-dev-environments#workflow-1-onboarding-) You have a one-click button accessible from anywhere that allows those eager contributors to get started instantly. Win for everyone!
+Onboarding is easy with ephemeral environments, as we described in [workflow #1.](#workflow-1-onboarding) You have a one-click button accessible from anywhere that allows those eager contributors to get started instantly. Win for everyone!
 
 ![Running Prometheus using our local companion app on Gitpod](../../../static/images/blog/ephemeral-dev-envs/screenshot.png)
-_Look at us running [Prometheus](https://github.com/prometheus/prometheus) on Gitpod using our [Local Companion App!](https://www.gitpod.io/blog/local-app)_
+_Look at us running [Prometheus](https://github.com/prometheus/prometheus) on Gitpod using our [Local Companion App!](/blog/local-app)_
 
-## Are ephemeral, cloud development environments the future?
+## Are ephemeral, cloud developer environments the future?
 
 Gitpod and GitHub Codespaces are leading the way in this new future -- one where friction is removed from the developer experience, so that developers are always ready-to-code.
 
-We’d be interested to hear your thoughts, would you switch to a cloud development environment? Why, or why not?
+We’d be interested to hear your thoughts, would you switch to a cloud developer environment? Why, or why not?
 
 ### Join us for the ride!
 

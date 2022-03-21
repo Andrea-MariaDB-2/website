@@ -3,12 +3,31 @@
 </script>
 
 <script>
-  import OpenGraph from "../components/open-graph.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
-<style>
+<style lang="postcss">
+  article :global() {
+    --h1: 3.375rem;
+    --h2: 3rem;
+    --h3: 2rem;
+    --h4: 1.75rem;
+    --h5: 1.25rem;
+    line-height: 1.75;
+  }
+
   ol li::marker {
     content: counters(list-item, ".") ". ";
+  }
+  :is(ol.toc, ul) > li::marker {
+    @apply text-h3 font-bold;
+  }
+  ol.toc > li::marker {
+    @apply text-inherit;
+  }
+
+  ::marker {
+    @apply text-orange-800;
   }
 </style>
 
@@ -18,15 +37,15 @@
     title: "Self-Hosted Terms",
   }}
 />
-<article class="text-blob">
+<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
   <h1>
     Gitpod Self-Hosted Free License Terms and Gitpod Enterprise Source Code
     License
   </h1>
-  <ol class="toc" type="1">
-    <li>
-      <h2>Preamble</h2>
-      <ol type="1">
+  <ol class="toc ol-decimal list-inside space-y-4 mb-4">
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Preamble</h2>
+      <ol class="ol-decimal list-inside space-y-4 mb-4">
         <li>
           These Software Licensing Terms (“Terms”) provide the terms and
           conditions that govern usage of the Software Gitpod Self-Hosted Free
@@ -37,9 +56,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>Scope of Terms</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Scope of Terms</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           These Terms apply to the usage of the Software, which is designed to
           be used for business purposes.
@@ -55,9 +74,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>License Fees</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">License Fees</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           The use of the Software as described in Sec. 2 is free of charge. It
           is however limited to the features that are accessible without a
@@ -71,9 +90,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>Granting of Rights</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Granting of Rights</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           Permission is hereby granted to obtain a copy of the Software and
           their accompanying documentation to use, reproduce and execute the
@@ -127,9 +146,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>Telemetry</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Telemetry</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           Gitpod intends to collect certain statistical data on the use of the
           Software on an anonymized basis in the future with a future version of
@@ -139,9 +158,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>Warranty and Liability</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Warranty and Liability</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           THE SOFTWARE IS PROVIDED FREE OF CHARGE ON AN “AS IS” BASIS, WITHOUT
           WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -161,9 +180,9 @@
         </li>
       </ol>
     </li>
-    <li>
-      <h2>Third-party Components</h2>
-      <ol>
+    <li class="mb-4 my-small">
+      <h2 class="mx-0 my-4 inline">Third-party Components</h2>
+      <ol class="list-inside space-y-4 mb-4">
         <li>
           The Software contains third-party components including open source
           software (“Third-Party Components“). Parts of such Third-Party

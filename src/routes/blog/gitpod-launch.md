@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Mon Apr 5 2019 15:00:00 GMT+0000 (UTC)
-excerpt: Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or
+excerpt: Every day developers waste millions of hours switching contexts between projects and branches, setting up developer environments, or
 image: teaser-launch-min.jpg
 slug: gitpod-launch
 subtitle: No Setup, Less Waiting, More Flow
@@ -13,11 +13,11 @@ title: Introducing Gitpod — Frictionless Coding on GitHub
   export const prerender = true;
 </script>
 
-Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or simply waiting for builds to complete.
+Every day developers waste millions of hours switching contexts between projects and branches, setting up developer environments, or simply waiting for builds to complete.
 
 This friction is not only time consuming but is a serious barrier for contributors. Reading through a long list of setup instructions and messing up your own laptop is just too much effort.
 
-Today, we are happy to announce the launch of [Gitpod.io](https://gitpod.io), an online service that provides disposable, ready-to-code development environments for GitHub projects.
+Today, we are happy to announce the launch of [Gitpod.io](https://gitpod.io), an online service that provides disposable, ready-to-code developer environments for GitHub projects.
 
 ## One-Click Dev Environments for GitHub
 
@@ -31,7 +31,7 @@ You can try Gitpod right now. It's free for public repositories.
 
 ## No Setup
 
-Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod) for more details.
+Not all projects are equal. We maintain a [developer friendly Docker image](https://github.com/gitpod-io/workspace-images/blob/d43c719bb2ff7b6849c0456fe21e3ca06c20168f/dazzle.yaml#L18-L32) that includes all the commonly used tools and version managers. But you can point to your own Docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod) for more details.
 
 With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
 

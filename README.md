@@ -1,7 +1,7 @@
 # Gitpod Website
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/gitpod-io/website)
-[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
 This repository contains the website hosted on https://www.gitpod.io as of April 8, 2021.
 
@@ -19,5 +19,5 @@ This website uses the following technologies:
 - [SvelteKit](https://kit.svelte.dev)
 - [mdsvex](https://mdsvex.com)
 - [Tailwind CSS](https://tailwindcss.com)
-  - Note: Custom CSS was used initally. This is considered legacy and any PR going forward requires Tailwind CSS.
+  - Note: Custom CSS was used initially. This is considered legacy and any PR going forward requires Tailwind CSS.
 - [Netlify](https://www.netlify.com)

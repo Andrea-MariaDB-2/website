@@ -1,0 +1,120 @@
+.content-docs,
+.content-blog {
+  line-height: 177.7%;
+
+  // Spacing
+  * + h2,
+  * + .h2 {
+    margin-top: var(--medium);
+  }
+
+  * + h3,
+  * + .h3 {
+    margin-top: var(--large);
+  }
+
+  p + h4,
+  h4 ~ h4 {
+    margin-top: var(--xx-small);
+  }
+
+  p + p,
+  p + ul,
+  ul + p {
+    margin-top: var(--micro);
+  }
+
+  li {
+    + li {
+      margin-top: var(--macro);
+    }
+  }
+
+  // Code blocks
+  :not(pre) > code {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--brand-light);
+    white-space: break-spaces;
+  }
+
+  pre {
+    &:not(.language-null) {
+      background: var(--off-white);
+    }
+  }
+
+  td:first-child {
+    @apply font-bold text-gray-900;
+  }
+
+  th + th,
+  td + td {
+    @apply border-l border-solid border-gray-400;
+  }
+
+  tr + tr {
+    @apply border-t border-solid border-gray-400;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    .icon-link {
+      @apply inline-block ml-2;
+      &::after {
+        content: "";
+        @apply inline-block opacity-0 bg-cover;
+        width: 22px;
+        height: 18px;
+        background-image: url("/svg/headling-link.svg");
+        transition: all 0.2s 50ms;
+      }
+    }
+
+    &:focus,
+    &:hover {
+      .icon-link::after {
+        @apply opacity-100;
+      }
+    }
+  }
+
+  a[href*="http://"]:not([href*="www.gitpod.io"]),
+  a[href*="https://"]:not([href*="www.gitpod.io"])
+  {
+    &::after {
+      display: inline;
+      content: url("/svg/external.svg");
+      margin-left: 0.2rem;
+      margin-right: 0.1rem;
+      opacity: 0.6;
+      transition: all 0.2s 50ms;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  [class*="btn"] {
+    &::after {
+      display: none !important;
+    }
+  }
+
+  a[href*="https://gitpod.io/#"]
+  {
+    white-space: initial !important;
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .no-nowrap {
+    white-space: initial !important;
+    text-decoration: underline;
+  }
+}

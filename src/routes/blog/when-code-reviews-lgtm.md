@@ -32,7 +32,7 @@ As a result, many bugs are not spotted and potentially wrong assumptions are not
 
 ## Deep Code Reviews
 
-Instead of glimpsing over the changes on GitHub, we should check out the branch in a real development environment. So we can read, run, and test them.
+Instead of glimpsing over the changes on GitHub, we should check out the branch in a real developer environment. So we can read, run, and test them.
 
 Yes, it messes up our local development context and might even take a bit of time to set up. And, yes, we have to go back to the online code review tool to add our comments. It’s all a bit cumbersome so … **maybe for this little change I could just go with a quick LGTM?**
 
@@ -40,9 +40,9 @@ I feel your pain, but you should not take that shortcut. It will fire back event
 
 ## Enter Gitpod
 
-[Gitpod](/) gives you a full development environment with a single click for any pull request on GitHub. You don’t have to manually setup or even change anything on your local development environment. Just click a button and you have the best of both worlds:
+[Gitpod](/) gives you a full developer environment with a single click for any pull request on GitHub. You don’t have to manually setup or even change anything on your local developer environment. Just click a button and you have the best of both worlds:
 
-- a full development environment (similar to VS Code)
+- a full developer environment (similar to VS Code)
 
 - a great code review experience (similar to GitHub)
 

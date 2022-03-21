@@ -15,7 +15,7 @@ title: Using local services in Gitpod
 Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because they cannot easily be made available like the Docker daemon on your laptop.
 With your Gitpod workspace running in the cloud it does not have access to local services, which could render Gitpod unsuitable in those cases.
 
-There's a range of [different](https://developers.cloudflare.com/argo-tunnel/) [offerings](https://ngrok.com/) and [projects](http://serveo.net/) that aim to expose local services to the internet. However, they all do so indiscriminately. I.e. if one knows the URL to your now-public endpoint, they have access to your service.
+There's a range of [different](https://developers.cloudflare.com/argo-tunnel/) [offerings](https://ngrok.com/) that aim to expose local services to the internet. However, they all do so indiscriminately. I.e. if one knows the URL to your now-public endpoint, they have access to your service.
 On top of that, they do incur additional cost if used often.
 
 ## Inlets to the rescue
@@ -59,7 +59,7 @@ What you choose as `--upstream` depends on which kind of service you want to exp
 ## Example 1: your local Docker daemon
 
 Running a container engine like Docker or `containerd` in a Gitpod workspace is still [work-in-progress](https://github.com/gitpod-io/gitpod/issues/755). Until that's possible your only recurse is to connect to a remote daemon.
-Usually that daemon would run somewhere in the cloud, too, e.g. in your dev-cluster. However, some of us don't have a Kubernetes cluster laying around or just need access to docker to try something real quick.
+Usually that daemon would run somewhere in the cloud, too, e.g. in your dev-cluster. However, some of us don't have a Kubernetes cluster laying around or just need access to Docker to try something real quick.
 
 > This is _not_ how we plan to ultimatively support Docker/other containers in a Gitpod workspace.
 
@@ -77,7 +77,7 @@ Suppose you're developing a [Flutter based app](https://medium.com/@jacksonz666/
 Chances are that the device side of that product isn't exposed to the internet just yet, but only available in your local network.
 If that thing, as in Internet of Things, is speaking something akin to HTTP (like Yamaha's MusicCast or anything gRPC based) you could just replicate the setup above, except that you'd substitute Docker for the API you're trying to talk to.
 
-While are plenty of other services in this space that speak HTTP, think InfluxDB, OpenHAB or Prometheus, some don't.
+While there are plenty of other services in this space that speak HTTP, think InfluxDB, OpenHAB or Prometheus, some don't.
 Most notably [MQTT based](https://en.wikipedia.org/wiki/MQTT) broker or the [bulk](https://www.eclipse.org/hono/) of [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) based services.
 
 Inlets does not [support tunneling TCP](https://github.com/inlets/inlets-pro-pkg). There is yet another project that can shovel TCP through an HTTP tunnel: [chisel](https://github.com/jpillora/chisel).

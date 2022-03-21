@@ -17,7 +17,7 @@ Gitpod is a web-based IDE. As such one would think it only works for web-based p
 
 ![VSCode in Gitpod](../../../static/images/blog/native-ui-with-vnc/virtual-x-sever-running-on-a-remote-desktop-client.png)
 
-A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based development environment for native UI applications.
+A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based developer environment for native UI applications.
 
 ## Hello World
 
@@ -38,7 +38,7 @@ This Dockerfile uses the gitpod/workspace-full-vnc image which supports the setu
 
 [Gitpod](https://gitpod.io/) runs on Linux, so we need an X11 server that our UI application can connect to. As we do not have a physical display attached, we’ll use a framebuffer based X server, namely Xvfb. Using [x11vnc](http://www.karlrunge.com/x11vnc/), we can serve the virtual screen of the X server to a VNC client. There are a few VNC clients that run in the browser out there, but we’ll go with one that’s battle tested: [novnc](https://novnc.com/info.html). The combination of Xvfb, x11vnc and novnc is a proven one, and it happens to be the same that e.g. [Janitor](https://janitor.technology/) relies on.
 
-To make this setup work in Gitpod, we first create a Docker image that has the required tools installed, and a small bash script to tie things together. I went ahead and prepared those things in the [workspace images repo](https://github.com/gitpod-io/workspace-images/tree/master/full-vnc). Any Gitpod workspace started using the workspace-full-vnc image, has a DISPLAY environment variable set in the .bashrc and comes with a running X11 server. No need for any manual setup.
+To make this setup work in Gitpod, we first create a Docker image that has the required tools installed, and a small bash script to tie things together. I went ahead and prepared those things in the [workspace images repo](https://github.com/gitpod-io/workspace-images/blob/d43c719bb2ff7b6849c0456fe21e3ca06c20168f/chunks/tool-vnc/Dockerfile#L2). Any Gitpod workspace started using the workspace-full-vnc image, has a DISPLAY environment variable set in the .bashrc and comes with a running X11 server. No need for any manual setup.
 
 ## Let’s go big: running Visual Studio Code in Gitpod
 

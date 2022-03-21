@@ -1,14 +1,15 @@
-<script>
-  import Header from "../components/github-page/header.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
-  import PricingOffers from "../components/github-page/pricing-offers.svelte";
-  import Explore from "../components/explore.svelte";
-  import Headline from "../components/github-page/headline.svelte";
-  import { ghStudentPricingPlans as pricingPlans } from "../contents/github-page";
+<script context="module">
+  export const prerender = true;
 </script>
 
-<style>
-</style>
+<script>
+  import Header from "$lib/components/github-page/header.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PricingOffers from "$lib/components/github-page/pricing-offers.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import Headline from "$lib/components/github-page/headline.svelte";
+  import { ghStudentPricingPlans as pricingPlans } from "$lib/contents/github-page";
+</script>
 
 <OpenGraph
   data={{
