@@ -17,6 +17,8 @@
   import Card from "$lib/components/ui-library/card";
   import Button from "$lib/components/ui-library/button";
   import { noOfEngineers } from "$lib/contents/contact";
+  import { scrollToElement } from "$lib/utils/helpers";
+  import { tick } from "svelte";
 
   const selfHostingSubject = "Self-hosting";
   const otherSubject = "Other";
@@ -92,20 +94,11 @@
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
-  const handleClick = () => {
-    if (formData.cloudInfrastructure) {
-      formData.cloudInfrastructure.valid = true;
-    }
-
-    if (!formData.selectedSubject.value) {
-      formData.selectedSubject.value = otherSubject;
-      formData.selectedSubject.valid = true;
-    }
-  };
-
   const handleSubmit = async () => {
     isFormDirty = true;
     if (!isFormValid) {
+      await tick();
+      scrollToElement(sectionStart, ".error");
       return;
     }
 
@@ -361,7 +354,6 @@
               <Button
                 variant="cta"
                 size="medium"
-                on:click={handleClick}
                 type="submit"
                 disabled={isFormDirty && !isFormValid}>Send message</Button
               >

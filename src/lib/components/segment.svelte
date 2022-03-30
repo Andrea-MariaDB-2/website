@@ -10,24 +10,37 @@
   }
 
   export const trackEvent = (event_name: string, props: any) => {
-    window.analytics?.track(event_name, props, {
-      context: {
-        ip: "0.0.0.0",
-        page: {
-          referrer: window.prevPages?.length == 2 ? window.prevPages[0] : "",
-          url: window.location.href,
-        },
+    window.analytics?.track(
+      event_name,
+      {
+        ...props,
+        authenticated: !!Cookies.get("gitpod-user"),
       },
-    });
+      {
+        context: {
+          ip: "0.0.0.0",
+          page: {
+            referrer: window.prevPages?.length == 2 ? window.prevPages[0] : "",
+            url: window.location.href,
+          },
+        },
+      }
+    );
   };
 
   export const trackPage = (props: any) => {
-    window.analytics?.page(props, {
-      context: {
-        ip: "0.0.0.0",
-        page: props,
+    window.analytics?.page(
+      {
+        ...props,
+        authenticated: !!Cookies.get("gitpod-user"),
       },
-    });
+      {
+        context: {
+          ip: "0.0.0.0",
+          page: props,
+        },
+      }
+    );
   };
 
   export const trackIdentity = (traits: any) => {

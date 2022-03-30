@@ -5,6 +5,7 @@
   import type { Feature } from "$lib/types/feature.type";
   import Console from "./console.svelte";
   import Section from "./section.svelte";
+  import ButtonsWrapper from "./buttons-wrapper.svelte";
 
   export let feature: Feature;
   const {
@@ -81,10 +82,7 @@
           </ul>
         {/if}
       </div>
-      <div
-        class:buttons-wrapper={moreButton && secondaryButton}
-        class:hidden={!moreButton && !secondaryButton}
-      >
+      <ButtonsWrapper class={!moreButton && !secondaryButton ? "hidden" : ""}>
         {#if moreButton}
           <LinkButton
             href={moreButton.href}
@@ -103,7 +101,7 @@
               : undefined}>{secondaryButton.text}</LinkButton
           >
         {/if}
-      </div>
+      </ButtonsWrapper>
     </div>
     <div
       class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"

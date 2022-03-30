@@ -14,7 +14,7 @@
 </script>
 
 <div class="max-w-6xl mx-auto">
-  <h1 class="text-center">{faq.headline}</h1>
+  <h2 class="text-center mb-x-small">{faq.headline}</h2>
   <div class="space-y-xx-small">
     {#each faq.items as item}
       <Faq title={item.title}>

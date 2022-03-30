@@ -7,6 +7,7 @@
   import topicsState from "../states/topics-state";
 
   import docsCurrentSectionStore from "$lib/stores/docs-current-section";
+  import EditInGitpod from "../edit-in-gitpod.svelte";
   export let MENU;
 
   $: currentSection = MENU.find(({ path }) =>
@@ -20,10 +21,13 @@
   );
 </script>
 
-<div class="mobile-menu mb-10 md:hidden">
+<div class="mobile-menu mb-10 lg:hidden">
   {#if $topicsState}
     <MobileMenuTopics {MENU} />
   {:else}
     <MobileMenuSubMenu {currentSection} />
   {/if}
+  <div class="mt-4">
+    <EditInGitpod />
+  </div>
 </div>

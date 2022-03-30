@@ -7,7 +7,7 @@
   import type { Email } from "../../functions/submit-form";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import SubmissionSuccess from "$lib/components/submission-success.svelte";
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
   import Section from "$lib/components/section.svelte";
   import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
   import Header from "$lib/components/header.svelte";
@@ -16,6 +16,7 @@
   import Checkbox from "$lib/components/ui-library/checkbox";
   import Button from "$lib/components/ui-library/button";
   import Card from "$lib/components/ui-library/card";
+  import { scrollToElement } from "$lib/utils/helpers";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
@@ -70,16 +71,11 @@
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
-  const handleClick = () => {
-    if (!formData.selectedSubject.value) {
-      formData.selectedSubject.value = otherSubject;
-      formData.selectedSubject.valid = true;
-    }
-  };
-
   const handleSubmit = async () => {
     isFormDirty = true;
     if (!isFormValid) {
+      await tick();
+      scrollToElement(sectionStart, ".error");
       return;
     }
 
@@ -282,7 +278,6 @@
               <Button
                 variant="cta"
                 size="medium"
-                on:click={handleClick}
                 type="submit"
                 class="btn"
                 disabled={isFormDirty && !isFormValid}

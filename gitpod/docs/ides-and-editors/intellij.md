@@ -11,7 +11,7 @@ title: IntelliJ
 
 > **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/support).
 
-### Getting Start with {title} Desktop in Gitpod
+## Getting Start with {title} Desktop in Gitpod
 
 1. Navigate to [your preferences page](https://gitpod.io/preferences)
 2. Select "Open In Desktop IDE" and select {title}

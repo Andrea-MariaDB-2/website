@@ -70,6 +70,7 @@ const quickstartItems = readable(
     ),
     mapQuickstart("SvelteKit", "quickstart/sveltekit", false),
     mapQuickstart("TLA+", "quickstart/tlaplus", false),
+    mapQuickstart("Wasp", "quickstart/wasp", false),
     mapQuickstart("Wordpress", "quickstart/wordpress", false),
     mapQuickstart("X11 VNC", "quickstart/x11-vnc", false),
     mapQuickstart("Yasm", "quickstart/yasm", false),

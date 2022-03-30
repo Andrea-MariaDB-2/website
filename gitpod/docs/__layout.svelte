@@ -6,12 +6,12 @@
   import { MENU } from "$lib/contents/docs/menu";
 </script>
 
-<div class="pb-10 md:flex md:pt-10">
-  <div class="hidden md:block md:w-1/4 md:pt-24">
+<div class="pb-10 lg:flex lg:pt-10">
+  <div class="hidden lg:block lg:w-1/4 lg:pt-24">
     <Menu {MENU} />
   </div>
-  <div class="md:w-3/4 md:pl-4">
-    <Search />
+  <div class="lg:w-3/4 lg:pl-4">
+    <Search showEditInGitpod={true} />
     <MobileMenu {MENU} />
     <slot />
   </div>

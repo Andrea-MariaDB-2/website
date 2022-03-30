@@ -1,6 +1,7 @@
 <script lang="ts">
   import Section from "./section.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import ButtonsWrapper from "./buttons-wrapper.svelte";
 
   type Link = {
     text: string;
@@ -41,7 +42,7 @@
     <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-none text-large mb-x-small">
       {text}
     </p>
-    <div class="flex gap-4 justify-center lg:justify-start">
+    <ButtonsWrapper class="justify-center lg:justify-start">
       {#if btnPrimary}
         <LinkButton
           size="large"
@@ -62,7 +63,7 @@
           {btnSecondary.text}
         </LinkButton>
       {/if}
-    </div>
+    </ButtonsWrapper>
   </div>
   <img
     class="absolute max-w-2xl right-0 top-1/2 -z-10 hidden lg:block"

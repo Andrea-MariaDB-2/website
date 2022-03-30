@@ -30,7 +30,7 @@
 >
   <div class="w-full space-y-8">
     {#each tableData.columns as col}
-      <FeatureTableColumnMobile featureData={col} />
+      <FeatureTableColumnMobile tocData={tableData.toc} featureData={col} />
     {/each}
   </div>
 </div>

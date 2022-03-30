@@ -22,7 +22,7 @@
 <div>
   <Card
     size="medium"
-    class="quotes pt-micro px-0 sm:px-xx-small sm:pt-x-small sm:pb-micro lg:p-small mx-auto {clazz}"
+    class="quotes pt-micro px-0 sm:px-xx-small sm:pt-x-small sm:pb-micro md:pb-medium lg:px-small mx-auto {clazz}"
   >
     <div class="flex justify-around flex-wrap max-w-3xl mx-auto">
       {#each quotes as quote}
@@ -42,7 +42,7 @@
       {/each}
     </div>
     <div
-      class="items-center justify-center mt-xx-small text-center md:text-left flex-wrap md:flex h-auto md:h-[400px]"
+      class="items-start justify-center mt-macro md:mt-small text-center md:text-left flex-wrap md:flex h-auto"
     >
       <div class="w-full md:w-1/2">
         <img
@@ -53,7 +53,7 @@
         />
       </div>
       <div
-        class="text flex w-full md:w-1/2 justify-center flex-col flex-1 py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0"
+        class="text flex w-full md:w-1/2 justify-center flex-col flex-1 px-xx-small py-xx-small md:py-0 sm:pl-x-small lg:pl-small lg:pr-0"
       >
         <p class="text-large">
           &ldquo;{selectedQuote.text}&rdquo;

@@ -30,11 +30,9 @@ data={{
   }}
 />
 
-# Welcome!
+# How would you like to get started with Gitpod?
 
 Learn how to spin up fresh, automated dev environments for each task, in the cloud, in seconds.
-
-## How would you like to get started with Gitpod?
 
 <GetStarted />
 

@@ -3,6 +3,7 @@
   import LinkButton from "$lib/components/ui-library/link-button";
   import Section from "../section.svelte";
   import Card from "$lib/components/ui-library/card";
+  import ButtonsWrapper from "../buttons-wrapper.svelte";
 
   const buttons: ExtensionButton[] = [
     {
@@ -37,7 +38,7 @@
         and Bitbucket projects to easily spin up a dev environment with a single
         click.
       </p>
-      <div class="flex justify-center items-center flex-wrap gap-4">
+      <ButtonsWrapper>
         {#each buttons as { href, icon, text }}
           <LinkButton
             variant="white"
@@ -56,7 +57,7 @@
             {text}
           </LinkButton>
         {/each}
-      </div>
+      </ButtonsWrapper>
     </div>
   </Section>
 </Card>

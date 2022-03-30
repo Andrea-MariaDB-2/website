@@ -10,6 +10,10 @@ title: DevX Digest 06 - Offload pressure to improve DevX
 type: digest
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Welcome to DevX Digest - the place to hear all about Developer Experience, brought to you by Pauline Narvas [(@paulienuh)](https://twitter.com/paulienuh) and Mike Nikles [(@mikenikles)](https://twitter.com/mikenikles) from Gitpod. You’re reading another newsletter from us 🎉!
 
 ## Offloading pressure off developers - can it improve DevX?

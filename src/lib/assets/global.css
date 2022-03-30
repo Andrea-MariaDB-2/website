@@ -84,3 +84,8 @@
     @apply list-outside list-alpha;
   }
 }
+
+.docs-toc-item::before {
+  @apply absolute left-[3px];
+  content: url(/svg/docs/fold.svg);
+}

@@ -7,40 +7,48 @@ title: GitHub Integration
   export const prerender = true;
 </script>
 
-# GitHub Integration
+# GitHub Integration - github.com
 
-Gitpod works with any public or private repository on [GitHub](https://github.com/).
+Gitpod works well with public or private repositories from [github.com](https://github.com/).
 
-To start a workspace from a GitHub project, prefix the GitHub project URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
+The first time you login to Gitpod with GitHub, you will be prompted to "Authorize Gitpod" to access your GitHub account. This creates a connection between Gitpod and your Github account, and installs an OAuth App in your GitHub [settings](https://github.com/settings/applications).
 
-## Enable Prebuilds
+Gitpod uses the name and email from your GitHub account ID to create a new Gitpod user account. This is sufficient to start a Gitpod workspace on a public repository.
 
-To enable [prebuilt workspaces](/docs/prebuilds) for your GitHub project, you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilt page](/docs/prebuilds).
+![GitHub prompt for Gitpod OAuth App permissions with user:email scope](../../../static/images/integrations/github-oauth-install.png)
 
-## GitHub Enterprise Server
+## Starting Workspaces
 
-In Gitpod, you can register your own GitHub OAuth application. This allows to use Gitpod with any GitHub instance.
+To start a new workspace after logging into Gitpod, use cmd-O (ctrl-O on Windows) or click on the **New Workspace** button in https://gitpod.io/workspaces. This will prompt for a repository URL, or suggest recent repositories opened with your account.
 
-Here's how to do that:
+You can also start a Gitpod workspace using a GitHub repository URL. Simply point your browser to the repository URL prefixed with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
 
-1. When first starting your Gitpod installation, you'll get redirected to /first-steps where you get prompted to add a Git Provider. Click the button.
+## Granting additional GitHub OAuth permissions
 
-2. In the pop-up you choose GitHub as the type and type the host URL of the GitHub installation you want to use. If you want to hook up with the github.com you can use that host as well, of course.
+GitHub requires `repo` scope permissions to open a workspace on a private repository, or to push code changes from a workspace back to your repository.
 
-3. The form for your GitHub integration now shows three values. The first one is the redirect URL, that you need to register on the GitHub side. Copy the redirect Url to your clipboard.
+You can grant these additional permissions for GitHub at https://gitpod.io/integrations using the context menu on the right.
 
-4. Go to `/settings/developers` on your GitHub installation to create an OAuth App. Type in a name (e.g. Gitpod) and paste the Redirect URL in the corresponding text area.
+![Gitpod settings for GitHub integration permissions](../../../static/images/integrations/github-oauth-permissions.png)
 
-<img width="1029" alt="Screenshot 2020-08-25 at 10 09 19" src="https://user-images.githubusercontent.com/372735/91149549-7d14a800-e6bb-11ea-8721-6ef109297622.png">
+## Authorizing GitHub webhooks
 
-<img width="794" alt="Screenshot 2020-08-25 at 10 09 53" src="https://user-images.githubusercontent.com/372735/91149546-7c7c1180-e6bb-11ea-956f-2f7190db4ca4.png">
+The first time you create a [new Gitpod project](https://gitpod.io/new) you will need to configure our [GitHub App](https://github.com/apps/gitpod-io) to watch your repositories and trigger prebuilds.
 
-5. Copy the `Application ID` and the `Secret` in the corresponding form fields (`Client ID` resp. `Client Secret`) of your Gitpod installation.
+> NOTE: Installing the GitHub App for webhooks is only required for github.com, not for [GitHub Enterprise](/docs/github-enterprise-integration) or other git providers.
 
-<img width="774" alt="Screenshot 2020-08-25 at 10 10 15" src="https://user-images.githubusercontent.com/372735/91149544-7be37b00-e6bb-11ea-8ad6-5fb2d5eba7d4.png">
+![Gitpod new project prompt for GitHub App authorization](../../../static/images/integrations/github-new-project-install-app.png)
 
-6. Press `Connect` and go through the Auth flow the first time.
+The App must be installed on every GitHub user or organization account with repositories used in a Gitpod project. This allows you to grant permissions for all repositories or select repo-by-repo.
 
-Congratulations, you have setup the GitHub OAuth applicaton. 🎉
+![GitHub App repo authorization](../../../static/images/integrations/github-app-authorize-repos.png)
 
-Next up you should install the browser extension and [configure it with your Gitpod installation URL](/docs/browser-extension#use-with-gitpod-self-hosted).
+## Errors with private repositories on GitHub orgs
+
+If you encounter errors setting up a Gitpod project on a private repository in a GitHub org, you may need to approve the Gitpod OAuth app for 3rd party access to the org.
+
+1. In https://github.com/settings/connections/applications/484069277e293e6d2a2a.
+2. Look for the org in queston in the lower section of the page under 'Organization access'.
+3. Click on the Grant button.
+
+For more details, see [Issue #8076](https://github.com/gitpod-io/gitpod/issues/8076).

@@ -9,6 +9,8 @@
   import Textarea from "$lib/components/ui-library/textarea";
   import Button from "$lib/components/ui-library/button";
   import Card from "$lib/components/ui-library/card";
+  import { tick } from "svelte";
+  import { scrollToElement } from "../lib/utils/helpers";
 
   const extensionUrls = {
     chrome:
@@ -46,12 +48,15 @@
   };
   let isFormDirty = false;
   let isFeedbackSent = false;
+  let form: HTMLElement;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
   const handleSubmit = async () => {
     isFormDirty = true;
     if (!isFormValid) {
+      await tick();
+      scrollToElement(form, ".error");
       return;
     }
 
@@ -132,6 +137,7 @@
     on:submit|preventDefault={handleSubmit}
     name="Extension Deletion"
     novalidate
+    bind:this={form}
     class="lg:w-2/5"
   >
     <input type="hidden" name="form-name" value="extension-deletion" />

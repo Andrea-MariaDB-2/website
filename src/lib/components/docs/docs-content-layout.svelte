@@ -6,7 +6,6 @@
   import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
-  import EditInGitpod from "$lib/components/docs/edit-in-gitpod.svelte";
   import docsCurrentSectionStore from "$lib/stores/docs-current-section";
   import PrevNext from "./prev-next.svelte";
   import OnThisPageNav from "../on-this-page-nav.svelte";
@@ -31,12 +30,11 @@
   }}
 />
 <AnnouncementBanner />
-<EditInGitpod />
 <div class="flex">
-  <div class="content-docs prose max-w-none flex-auto min-w-0 xl:w-2/3">
+  <div class="content-docs prose md:px-4 max-w-none flex-auto min-w-0 xl:w-2/3">
     <slot />
   </div>
-  <OnThisPageNav class="mt-20" />
+  <OnThisPageNav />
 </div>
 <FeedbackWidget type="docs" class="my-huge" />
 <PrevNext />

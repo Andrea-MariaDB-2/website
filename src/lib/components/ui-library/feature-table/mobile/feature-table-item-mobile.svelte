@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { FeatureItemDetail } from "../feature-table.types";
-  export let definition: FeatureItemDetail;
+  import QaTooltip from "$lib/components/qa-tooltip.svelte";
+  export let definition: any;
 </script>
 
 {#if definition.list}
@@ -16,7 +16,15 @@
   </div>
 {:else}
   <div class="flex items-center flex-col justify-center">
-    <div class="font-bold uppercase mb-macro">{definition.term}</div>
+    <div class="font-bold uppercase mb-macro">
+      <div class="flex items-start">
+        {#if definition.type === "tooltip"}
+          <QaTooltip text={definition.term} tooltip={definition.data.tooltip} />
+        {:else}
+          {definition.term}
+        {/if}
+      </div>
+    </div>
     {#if definition.text}
       {@html definition.text}
     {/if}

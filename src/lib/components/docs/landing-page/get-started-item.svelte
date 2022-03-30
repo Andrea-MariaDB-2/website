@@ -5,6 +5,11 @@
 </script>
 
 <style lang="postcss">
+  :global(.prose) h2 {
+    @apply text-p-large my-macro;
+    line-height: 150%;
+  }
+
   p {
     @apply mt-0;
   }
@@ -21,7 +26,7 @@
     />
   </div>
   <div class="flex flex-col">
-    <h4 class="mt-2 mb-macro">{getStartedItem.title}</h4>
+    <h2 class="mt-2 h4 mb-macro">{getStartedItem.title}</h2>
     <p>{getStartedItem.description}</p>
   </div>
   <div class="mt-auto">

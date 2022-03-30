@@ -7,7 +7,7 @@
 
 <Header {title}>
   <div slot="content">
-    <p class="text-large">
+    <p class="text-large mb-x-small">
       <slot name="description" />
     </p>
     <LinkButton

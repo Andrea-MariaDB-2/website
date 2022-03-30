@@ -89,16 +89,14 @@
 
 <style lang="postcss">
   div :global(.youtube) {
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
+    @apply relative overflow-hidden max-w-full m-auto;
     max-height: 620px;
-    margin: auto;
   }
 
-  div :global(.youtube) {
+  div :global(.youtube),
+  div {
     width: 990px;
-    max-width: 100%;
+    @apply max-w-full mx-auto;
   }
 
   div :global(.youtube::after) {
@@ -108,12 +106,7 @@
   }
 
   iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
+    @apply absolute top-0 left-0 w-full h-full max-w-full;
   }
 </style>
 
@@ -130,9 +123,9 @@
       allowfullscreen
     />
   </Card>
+  <Share
+    text="Share this video"
+    {shareLinks}
+    class="share justify-end mx-auto mt-xx-small"
+  />
 </div>
-<Share
-  text="Share this video"
-  {shareLinks}
-  class="share justify-end mx-auto mt-xx-small"
-/>

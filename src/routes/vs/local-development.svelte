@@ -43,7 +43,7 @@
 >
   <div slot="content" class="grid gap-micro justify-center mt-small">
     {#each benefits as benefit}
-      <CardSmall card={benefit} />
+      <CardSmall card={benefit} headingLevel="h2" />
     {/each}
   </div>
 </Header>

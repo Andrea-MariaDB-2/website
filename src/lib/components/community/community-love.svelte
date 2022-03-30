@@ -18,5 +18,5 @@
     We celebrate that every person brings a unique perspective and experience to
     the community.
   </p>
-  <h5 class="mt-x-small">Thank you for being part of it. 🧡</h5>
+  <h3 class="h5 mt-x-small">Thank you for being part of it. 🧡</h3>
 </Section>

@@ -13,7 +13,7 @@ Prebuilds reduce wait time, by installing dependencies or running builds **befor
 
 `youtube: ZtlJ0PakUHQ`
 
-#### gitpod.yml
+## gitpod.yml
 
 In the example below, the `init` task installs npm packages into the node_modules directory of the workspace. The `command` task runs 'npm start' on every workspace startup.
 
@@ -25,7 +25,7 @@ tasks:
       npm start
 ```
 
-#### Prebuilds are shared
+## Prebuilds are shared
 
 Gitpod can trigger a prebuild whenever there is a commit to a repository. That prebuild will then be used for all new workspaces opened on that branch. This is ideal for working together on branches for testing or code reviews.
 
@@ -35,7 +35,7 @@ Prebuild users will see a message in their workspace terminal like this:
 🤙 This task ran as a workspace prebuild
 ```
 
-#### Workspace directory only
+## Workspace directory only
 
 Prebuilds save **only** the workspace directory. Other directories like the home directory are not saved by prebuilds.
 
@@ -154,7 +154,7 @@ github:
     addBadge: false
 ```
 
-### Additional GitHub integration
+#### Additional GitHub integration
 
 Once the GitHub app is installed, Gitpod can add helpful annotations to your pull requests.
 

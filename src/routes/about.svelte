@@ -3,6 +3,8 @@
 </script>
 
 <script lang="ts">
+  import ButtonsWrapper from "$lib/components/buttons-wrapper.svelte";
+
   import Explore from "$lib/components/explore.svelte";
   import Header from "$lib/components/header.svelte";
   import LogoAnimated from "$lib/components/logo-animated.svelte";
@@ -91,14 +93,14 @@
     international investors support us on our journey. We are a fully
     distributed team with humans from all over the world.
   </p>
-  <p class="mt-4 text-p-large">
+  <ButtonsWrapper class="mt-4 text-p-large">
     <LinkIconExternal href="https://www.gitpod.io/direction" icon="🗺️"
       >Gitpod's Direction</LinkIconExternal
     >
     <LinkIconExternal href="https://www.gitpod.io/roadmap" icon="🛣"
       >Gitpod's Roadmap</LinkIconExternal
     >
-  </p>
+  </ButtonsWrapper>
 </div>
 
 <div class="max-w-4xl my-small lg:my-x-huge mx-auto">
@@ -153,7 +155,7 @@
     We have always built in the open. If you want to learn skim through some of
     our public Notion pages.
   </p>
-  <p class="mt-4 text-p-large">
+  <ButtonsWrapper class="mt-4 text-p-large">
     <LinkIconExternal
       href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
       icon="💻">How we work</LinkIconExternal
@@ -162,7 +164,7 @@
       href="https://www.notion.so/gitpod/Architecture-0e39e570b10f4e8ba7b259629ee3cb74"
       icon="🏗">Architecture</LinkIconExternal
     >
-  </p>
+  </ButtonsWrapper>
 </div>
 
 <Explore

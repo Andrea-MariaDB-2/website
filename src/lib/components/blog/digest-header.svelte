@@ -1,6 +1,7 @@
 <script lang="ts">
   import TwitterFollowButton from "../t-button.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import ButtonsWrapper from "../buttons-wrapper.svelte";
 </script>
 
 <style lang="postcss">
@@ -19,7 +20,7 @@
       target="_blank">@devxconf</a
     > on Twitter to stay updated.
   </p>
-  <div class="flex justify-center items-center flex-wrap gap-4 mt-x-small">
+  <ButtonsWrapper class="justify-center mt-x-small">
     <LinkButton
       variant="primary"
       size="medium"
@@ -29,5 +30,5 @@
       >Signup for the Newsletter</LinkButton
     >
     <TwitterFollowButton variant="secondary" />
-  </div>
+  </ButtonsWrapper>
 </section>

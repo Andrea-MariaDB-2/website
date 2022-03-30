@@ -19,6 +19,7 @@
   import Wrapper from "$lib/components/changelog/wrapper.svelte";
   import Header from "$lib/components/header.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import ButtonsWrapper from "$lib/components/buttons-wrapper.svelte";
 
   export let changelogEntries: ChangelogEntryType[];
 
@@ -59,10 +60,7 @@
     class="w-full"
     textAlign="left"
   >
-    <div
-      slot="content"
-      class="flex justify-start items-center flex-wrap gap-4  pt-x-small"
-    >
+    <ButtonsWrapper slot="content" class="pt-x-small">
       <TwitterFollowButton variant="primary" />
       <LinkButton
         target="_blank"
@@ -71,7 +69,7 @@
         variant="secondary"
         size="medium">Signup for the Newsletter</LinkButton
       >
-    </div>
+    </ButtonsWrapper>
   </Header>
 </div>
 
